@@ -1,5 +1,6 @@
 export const Publications: React.FC = () => {
     return(
+        
         <div>Publications</div>
     )
 }
