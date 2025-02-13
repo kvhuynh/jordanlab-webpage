@@ -15,7 +15,7 @@ import {
 export const People: React.FC = () => {
 	return (
 		<>
-			<Flex direction={"column"}>
+			<Flex direction={"column"} paddingTop={75}>
 				<Text textStyle={"6xl"} alignSelf={"flex-start"} marginBottom={"30px"}>
 					People
 				</Text>
@@ -24,18 +24,18 @@ export const People: React.FC = () => {
 					<Card.Body gap="2">
 						<Flex justifyContent="space-between">
 							<Card.Title mt="2" color="black">
-								<Text>Kevin Huynh</Text>
+								<Text>Tristan Jordan</Text>
 								<Text textStyle="sm" fontWeight={"light"}>
-									Researcher
+									Principal Investigator
 								</Text>
 								<Link>
 									<Text textStyle="sm" fontWeight={""} color={"blue"}>
-										kvhuynh@uw.edu
+										txjordan@uw.edu
 									</Text>
 								</Link>
 							</Card.Title>
 							<Box>
-								<Image height="150px" src="https://bit.ly/dan-abramov" />
+								<Image height="150px" src="https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B" />
 							</Box>
 						</Flex>
 						<Card.Description color={"black"}>
@@ -67,18 +67,18 @@ export const People: React.FC = () => {
 					<Card.Body gap="2">
 						<Flex justifyContent="space-between">
 							<Card.Title mt="2" color="black">
-								<Text>Kevin Huynh</Text>
+								<Text>Tristan Jordan</Text>
 								<Text textStyle="sm" fontWeight={"light"}>
-									Researcher
+									Principal Investigator
 								</Text>
 								<Link>
 									<Text textStyle="sm" fontWeight={""} color={"blue"}>
-										kvhuynh@uw.edu
+										txjordan@uw.edu
 									</Text>
 								</Link>
 							</Card.Title>
 							<Box>
-								<Image height="150px" src="https://bit.ly/dan-abramov" />
+								<Image height="150px" src="https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B" />
 							</Box>
 						</Flex>
 						<Card.Description color={"black"}>
@@ -110,18 +110,61 @@ export const People: React.FC = () => {
 					<Card.Body gap="2">
 						<Flex justifyContent="space-between">
 							<Card.Title mt="2" color="black">
-								<Text>Kevin Huynh</Text>
+								<Text>Tristan Jordan</Text>
 								<Text textStyle="sm" fontWeight={"light"}>
-									Researcher
+									Principal Investigator
 								</Text>
 								<Link>
 									<Text textStyle="sm" fontWeight={""} color={"blue"}>
-										kvhuynh@uw.edu
+										txjordan@uw.edu
 									</Text>
 								</Link>
 							</Card.Title>
 							<Box>
-								<Image height="150px" src="https://bit.ly/dan-abramov" />
+								<Image height="150px" src="https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B" />
+							</Box>
+						</Flex>
+						<Card.Description color={"black"}>
+							i hate my lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdfi hate my
+							lifesfasdfasdfasfasdfsfasdfasdf
+						</Card.Description>
+					</Card.Body>
+					<Card.Footer justifyContent="flex-end">
+						<Link href="">link 1</Link>
+						<Link href="">link 2</Link>
+						<Link href="">link 3</Link>
+						<Link href="">lin`k 4</Link>
+					</Card.Footer>
+				</Card.Root>
+				<Card.Root backgroundColor={"white"} border={"none"}>
+					<Card.Body gap="2">
+						<Flex justifyContent="space-between">
+							<Card.Title mt="2" color="black">
+								<Text>Tristan Jordan</Text>
+								<Text textStyle="sm" fontWeight={"light"}>
+									Principal Investigator
+								</Text>
+								<Link>
+									<Text textStyle="sm" fontWeight={""} color={"blue"}>
+										txjordan@uw.edu
+									</Text>
+								</Link>
+							</Card.Title>
+							<Box>
+								<Image height="150px" src="https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B" />
 							</Box>
 						</Flex>
 						<Card.Description color={"black"}>
@@ -153,61 +196,18 @@ export const People: React.FC = () => {
 					<Card.Body gap="2">
 						<Flex justifyContent="space-between">
 							<Card.Title mt="2" color="black">
-								<Text>Kevin Huynh</Text>
+								<Text>Tristan Jordan</Text>
 								<Text textStyle="sm" fontWeight={"light"}>
-									Researcher
+									Principal Investigator
 								</Text>
 								<Link>
 									<Text textStyle="sm" fontWeight={""} color={"blue"}>
-										kvhuynh@uw.edu
+										txjordan@uw.edu
 									</Text>
 								</Link>
 							</Card.Title>
 							<Box>
-								<Image height="150px" src="https://bit.ly/dan-abramov" />
-							</Box>
-						</Flex>
-						<Card.Description color={"black"}>
-							i hate my lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdfi hate my
-							lifesfasdfasdfasfasdfsfasdfasdf
-						</Card.Description>
-					</Card.Body>
-					<Card.Footer justifyContent="flex-end">
-						<Link href="">link 1</Link>
-						<Link href="">link 2</Link>
-						<Link href="">link 3</Link>
-						<Link href="">link 4</Link>
-					</Card.Footer>
-				</Card.Root>
-				<Card.Root backgroundColor={"white"} border={"none"}>
-					<Card.Body gap="2">
-						<Flex justifyContent="space-between">
-							<Card.Title mt="2" color="black">
-								<Text>Kevin Huynh</Text>
-								<Text textStyle="sm" fontWeight={"light"}>
-									Researcher
-								</Text>
-								<Link>
-									<Text textStyle="sm" fontWeight={""} color={"blue"}>
-										kvhuynh@uw.edu
-									</Text>
-								</Link>
-							</Card.Title>
-							<Box>
-								<Image height="150px" src="https://bit.ly/dan-abramov" />
+								<Image height="150px" src="https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B" />
 							</Box>
 						</Flex>
 						<Card.Description color={"black"}>
