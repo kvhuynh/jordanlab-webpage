@@ -26,10 +26,10 @@ body {
   /* margin: 0 auto; */
   /* display: flex; */
   /* place-items: center; */
-  color: black;
+  color: white;
   min-width: 320px;
   min-height: 100vh;
-  background : rgba(255, 255, 255)
+  background : black
 }
 
 h1 {

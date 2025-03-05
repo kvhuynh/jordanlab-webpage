@@ -146,7 +146,7 @@ export const People: React.FC = () => {
 						<Link href="">link 1</Link>
 						<Link href="">link 2</Link>
 						<Link href="">link 3</Link>
-						<Link href="">lin`k 4</Link>
+						<Link href="">link 4</Link>
 					</Card.Footer>
 				</Card.Root>
 				<Card.Root backgroundColor={"white"} border={"none"}>

@@ -3,7 +3,7 @@ import { Flex, Box, Link } from "@chakra-ui/react";
 
 export const Nav: React.FC = () => {
 	return (
-		<Box zIndex="sticky" position="fixed" bg="black" w="100%" p={4}>
+		<Box zIndex="sticky" position="fixed" bg="#552682" w="100%" p={4}>
 			<Flex justify="space-between">
 				<Box>
 					<Link href="/" outline={"none"}>
