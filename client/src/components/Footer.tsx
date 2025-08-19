@@ -8,6 +8,7 @@ import {
 	Image,
 	Box,
 	Flex,
+	Text
 } from "@chakra-ui/react";
 
 import lmpLogo from "../assets/uw-lab-medicine-pathology.png";
@@ -16,7 +17,7 @@ import microLogo from "../assets/uw-dept-logo-department-of-microbiology/uw-dept
 export const Footer: React.FC = () => {
 	return (
 		<Box bg="beige" w="100%" position="sticky">
-			<Flex direction="row" align="center">
+			<Flex direction="row" align="center" justifyContent={"center"}>
 				<Link href="https://dlmp.uw.edu/" target="_blank">
 					<Image src={lmpLogo} height="100px"></Image>
 				</Link>
