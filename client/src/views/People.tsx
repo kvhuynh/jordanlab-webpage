@@ -60,7 +60,7 @@ const people: Record<
 				{ label: "Google Scholar", href: "#" },
 			],
 		},		{
-			name: "Freya van't veer",
+			name: "Maria McCavitt-Malvido",
 			role: "x year graduate student",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
@@ -70,7 +70,7 @@ const people: Record<
 				{ label: "Google Scholar", href: "#" },
 			],
 		},		{
-			name: "Freya van't veer",
+			name: "Hunter Toyoda",
 			role: "x year graduate student",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
