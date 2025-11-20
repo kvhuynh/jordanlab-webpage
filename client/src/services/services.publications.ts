@@ -18,7 +18,7 @@ const http = axios.create({
 
 export const getPublications = async (orcidId: string) => {
 	console.log("fetching publications from backend");
-	const res = await http.get(`/api/publications/${orcidId}`);
+	const res = await http.get(`/api/v1/publications/${orcidId}`);
     console.log(res)
 	return res.data;
 };
