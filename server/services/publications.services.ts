@@ -11,50 +11,6 @@ type Publication = {
 	authors: Array<string> | null;
 };
 
-// export const getAllPublications = async (orcidId: string) => {
-// 	const URL = `https://pub.orcid.org/v3/${orcidId}/works`;
-
-// 	const res = await axios.get(URL, {
-// 		headers: { Accept: "application/json" },
-// 	});
-
-// 	const publications: Publication[] = [];
-
-// 	const groups = res.data.group || [];
-// 	const dois: string[] = [];
-
-// 	for (let i = 0; i < groups.length; i++) {
-// 		const group = groups[i];
-// 		const workSummaries = group["work-summary"] || [];
-
-// 		for (let j = 0; j < workSummaries.length; j++) {
-// 			const work = workSummaries[j];
-// 			const title = work.title.title.value.toLowerCase().trim();
-// 			const externalIds =
-// 				(work["external-ids"] && work["external-ids"]["external-id"]) || [];
-
-// 			for (let k = 0; k < externalIds.length; k++) {
-// 				const id = externalIds[k];
-// 				if (id["external-id-type"] === "doi") {
-//                     if (!publications.title) {
-//                         publications[title] = {
-//                             "doi": id["external-id-value"]
-//                         }
-//                     }
-// 					dois.push(id["external-id-value"]);
-// 				}
-// 			}
-// 		}
-// 	}
-
-//     console.log(publications);
-
-// 	// _getAuthors(dois);
-//     _getAuthors(publications)
-
-// 	return res.data;
-// };
-
 export const getAllPublications = async (orcidId: string) => {
 	const URL = `https://pub.orcid.org/v3/${orcidId}/works`;
 
@@ -110,12 +66,13 @@ export const getAllPublications = async (orcidId: string) => {
 	// Sort by recency
 	publications.sort((a, b) => b.sortKey.localeCompare(a.sortKey));
 
-	 = _getAuthors(publications);
-	return res.data;
+	//  = _getAuthors(publications);
+	const fullPublications: Promise<Publication[]> = _getAuthors(publications);
+	return fullPublications;
 };
 
 // Private methods
-const _getAuthors = async (publications: Publication[]) => {
+const _getAuthors = async (publications: Publication[]): Promise<Publication[]> => {
 	const URL = "https://api.crossref.org/works/";
 
 	for (let publication in publications) {
@@ -125,23 +82,7 @@ const _getAuthors = async (publications: Publication[]) => {
 		});
 		const authors: string[] = res.data.message.author;
 		publications[publication].authors = authors;
-		console.log(authors);
-		
-		// console.log(publications);
-		
 	}
-		
-	//     // console.log(res.data.message.author);
-	// }
-
-	// for (let k = 0; k < test.length; k++) {
-	//     // wtf.push(test[k].author)
-
-	// }
-
-	// console.log(test[0].message.author);
-
-	// console.log(wtf);
 
 	return publications;
 };
