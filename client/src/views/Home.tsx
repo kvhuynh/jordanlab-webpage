@@ -18,8 +18,8 @@ export const Home: React.FC = () => {
 					color="white"
 					bg="rgba(0, 0, 0, 0.3)"
 				>
-					<Text fontSize="4xl" fontWeight="bold">
-						jordan lab - something here
+					<Text fontSize="6xl" fontWeight="bold">
+						Studying Eukaryotic Antiviral Responses
 					</Text>
 				</Flex>
 			</Parallax>
@@ -82,7 +82,6 @@ export const Home: React.FC = () => {
 					minHeight="100vh"
 					color="white"
 					bg="rgba(0, 0, 0, 0.3)"
-
 				>
 					<Text fontSize="4xl" fontWeight="bold">
 						sponsors and affiliations

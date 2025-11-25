@@ -59,7 +59,7 @@ export const Publications: React.FC = () => {
 		},
 		{}
 	);
-	const AUTHOR_LIMIT = 100;
+	const AUTHOR_LIMIT = 8;
 
 	return (
 		<Flex flexDirection={"column"} paddingTop={75}>
@@ -72,59 +72,78 @@ export const Publications: React.FC = () => {
 					.sort((a, b) => Number(b) - Number(a))
 					.map((year) => (
 						<Box key={year} mt={10}>
-							<Box mt={10} maxW="800px" mx="auto">
+							<Box maxW="800px" mx="auto">
 								{/* Year header */}
 								<Flex py={2} px={0}>
-									{" "}
-									{/* remove horizontal padding */}
 									<Text textStyle="6xl" textAlign="left">
 										{year}
 									</Text>
 								</Flex>
 
-								{/* Publications */}
+								{/* Publications in this year */}
 								{grouped[year].map((pub, idx) => (
-									<Box key={idx} mb={4}>
-										<Text textStyle="xl" textAlign="left" mb={1}>
+									<Box key={idx} mb={6}>
+										{/* Title */}
+										<Text textStyle="4xl" textAlign="left" mb={1}>
 											{pub.title ?? "No title"}
 										</Text>
 
+										{/* Authors + link */}
 										{pub.authors && pub.authors.length > 0 && (
-											<Flex flexWrap="wrap" gap={1} mb={1}>
-												{pub.authors.slice(0, AUTHOR_LIMIT).map((author, i) => {
-													const given = author.given?.toLowerCase() ?? "";
-													const family = author.family?.toLowerCase() ?? "";
-													const isPI =
-														family.includes("jordan") &&
-														given.startsWith("tristan");
+											<Flex direction="column" align="flex-start" mb={1}>
+												{/* Authors */}
+												<Flex flexWrap="wrap" gap={1} mb={1}>
+													{(() => {
+														const authors = pub.authors;
+														const total = authors.length;
 
-													return (
-														<Text
-															key={i}
-															fontSize={"sm"}
-															fontWeight={isPI ? "bold" : "normal"}
-															textDecoration={isPI ? "underline" : "none"}
-														>
-															{author.given} {author.family}
-															{i <
-															Math.min(pub.authors!.length, AUTHOR_LIMIT) - 1
-																? ","
-																: ""}
-														</Text>
-													);
-												})}
-												{pub.authors.length > AUTHOR_LIMIT && (
-													<Text>et al.</Text>
+														// If too many, show first N-1 and last author
+														const showExtra = total > AUTHOR_LIMIT;
+														const visibleAuthors = showExtra
+															? [
+																	...authors.slice(0, AUTHOR_LIMIT - 1),
+																	authors[total - 1],
+															  ]
+															: authors;
+
+														return visibleAuthors.map((author, i) => {
+															const given = author.given?.toLowerCase() ?? "";
+															const family = author.family?.toLowerCase() ?? "";
+
+															const isPI =
+																family.includes("jordan") &&
+																given.startsWith("tristan");
+
+															const isLast = i === visibleAuthors.length - 1;
+
+															return (
+																<Text
+																	key={i}
+																	fontSize="sm"
+																	fontWeight={isPI ? "bold" : "normal"}
+																	textDecoration={isPI ? "underline" : "none"}
+																>
+																	{author.given} {author.family}
+																	{!isLast ? "," : ""}
+																</Text>
+															);
+														});
+													})()}
+
+													{/* If skipped authors */}
+													{pub.authors.length > AUTHOR_LIMIT && (
+														<Text fontSize="sm">et al.</Text>
+													)}
+												</Flex>
+
+												{/* URL below authors */}
+												{pub.url && (
+													<Link href={pub.url} target="_blank" fontSize="sm">
+														{pub.url} <LuExternalLink />
+													</Link>
 												)}
-																						{pub.url && (
-											<Link href={pub.url} target="_blank">
-												{pub.url} <LuExternalLink />
-											</Link>
-										)}
 											</Flex>
 										)}
-
-
 									</Box>
 								))}
 							</Box>
@@ -133,7 +152,6 @@ export const Publications: React.FC = () => {
 			</Box>
 
 			<Separator size="lg" marginBottom={4} />
-
 		</Flex>
 	);
 };
