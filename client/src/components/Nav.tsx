@@ -1,35 +1,3 @@
-// import { useState } from "react";
-// import { Flex, Box, Link } from "@chakra-ui/react";
-
-// export const Nav: React.FC = () => {
-// 	return (
-// 		<Box zIndex="sticky" position="fixed" bg="#black" w="100%" p={4}>
-// 			<Flex justify="space-between">
-// 				<Box>
-// 					<Link href="/" outline={"none"} fontSize={"2xl"}>
-// 						🦠 Jordan Lab
-// 					</Link>
-// 				</Box>
-// 				<Flex gap={4}>
-// 					<Link href="/research" outline={"none"} fontSize={"2xl"}>
-// 						Research
-// 					</Link>
-// 					<Link href="/publications" outline={"none"} fontSize={"2xl"}>
-// 						Publications
-// 					</Link>
-// 					<Link href="/people" outline={"none"} fontSize={"2xl"}>
-// 						People
-// 					</Link>
-// 					<Link href="/contact" outline={"none"} fontSize={"2xl"}>
-// 						Contact
-// 					</Link>
-// 				</Flex>
-// 			</Flex>
-// 		</Box>
-// 	);
-// };
-// export default Nav;
-
 import {
 	Box,
 	Flex,
@@ -65,6 +33,9 @@ export const Nav: React.FC = () => {
 					</Link>
 					<Link href="/people" fontSize="lg" color="white">
 						People
+					</Link>
+					<Link href="/news" fontSize="lg" color="white">
+						News
 					</Link>
 					<Link href="/contact" fontSize="lg" color="white">
 						Contact
