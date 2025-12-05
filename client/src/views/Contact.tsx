@@ -1,7 +1,9 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 
 export const Contact: React.FC = () => {
-  const mapsKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+//   const mapsKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  const mapsKey = import.meta.env
+
 
   return (
     <Box paddingTop={75} paddingX={{ base: 4, md: 8 }}>
