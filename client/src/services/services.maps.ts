@@ -5,7 +5,7 @@
 import axios from "axios";
 
 const http = axios.create({
-	baseURL: "http://localhost:3000", // your backend URL
+	// baseURL: "http://localhost:3000", // your backend URL
     baseURL: "https://jordanlab-backend.onrender.com" //production
 });
 
