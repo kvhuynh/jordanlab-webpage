@@ -9,6 +9,7 @@ import {
 	Image,
 	Text,
 	Separator,
+	Spinner,
 } from "@chakra-ui/react";
 
 type Author = {
@@ -40,9 +41,12 @@ import { getPublications } from "../services/services.publications";
 export const Publications: React.FC = () => {
 	const [publications, setPublications] = useState<Publication[]>([]);
 
+	const [loading, setLoading] = useState(true);
+
 	useEffect(() => {
 		getPublications("0000-0002-0602-2871").then((data: Publication[]) => {
 			setPublications(data);
+			setLoading(false);
 			console.log(data);
 		});
 	}, []);
@@ -59,6 +63,14 @@ export const Publications: React.FC = () => {
 		},
 		{}
 	);
+
+	if (loading) {
+		return (
+			<Flex justify="center" align="center" height="300px" gap={7}>
+				<Spinner size="xl" /> <Text fontSize="lg">Fetching data...</Text>
+			</Flex>
+		);
+	}
 	const AUTHOR_LIMIT = 8;
 
 	return (
@@ -150,8 +162,6 @@ export const Publications: React.FC = () => {
 						</Box>
 					))}
 			</Box>
-
-			<Separator size="lg" marginBottom={4} />
 		</Flex>
 	);
 };

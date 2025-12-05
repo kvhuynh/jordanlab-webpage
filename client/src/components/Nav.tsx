@@ -20,7 +20,7 @@ export const Nav: React.FC = () => {
 			<Flex justify="space-between" align="center">
 				{/* Logo / Lab Name */}
 				<Link href="/" fontSize="2xl" fontWeight="bold" color="white">
-					🦠 Jordan Lab
+					🦠 The Jordan Lab
 				</Link>
 
 				{/* Desktop Links */}

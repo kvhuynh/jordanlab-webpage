@@ -163,59 +163,7 @@ export const Home: React.FC = () => {
 	const aboutOpacity = useTransform(scrollY, [200, 600], [0, 1]);
 
 	return (
-		<Box minHeight="100vh" overflow="hidden" >
-			{/* <motion.div
-				style={{
-					opacity: titleOpacity,
-				}}
-				initial={{ opacity: 0, y: 20 }}
-				animate={{
-					opacity: 1,
-					y: [0, -6, 0, 6, 0], // slow float
-				}}
-				transition={{
-					delay: 0.6, // fade-in delay
-					duration: 1.2, // fade-in speed
-					y: {
-						repeat: Infinity,
-						repeatType: "mirror",
-						duration: 6, // slow float cycle
-						ease: "easeInOut",
-					},
-				}}
-			>
-
-				<Parallax speed={-20}>
-					<Flex
-						position="relative"
-						zIndex={1}
-						direction="column"
-						align="center"
-						justify="center"
-						minHeight="100vh"
-						color="white"
-						bg="rgba(0, 0, 0, 0.3)"
-					>
-						<Text fontSize="6xl" fontWeight="bold">
-							Studying Eukaryotic Defense
-						</Text>
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{
-								opacity: 1,
-							}}
-							transition={{
-								delay: 1, // fade-in delay
-								duration: 2, // fade-in speed
-							}}
-						>
-							<Text textStyle="5xl" fontWeight="bold">
-								feat. The Jordan Lab
-							</Text>
-						</motion.div>
-					</Flex>
-				</Parallax>
-			</motion.div> */}
+		<Box minHeight="100vh" overflow="hidden">
 			<Flex
 				position="relative"
 				zIndex={1}
@@ -224,7 +172,7 @@ export const Home: React.FC = () => {
 				justify="center"
 				minHeight="100vh"
 				color="white"
-				bg="rgba(0, 0, 0, 0.3)"
+				// bg="rgba(0, 0, 0, 0.3)"
 			>
 				<Box position="relative" display="inline-block">
 					{/* Floating bacteria */}
@@ -232,32 +180,28 @@ export const Home: React.FC = () => {
 
 					{/* Main title with float */}
 					<motion.div
-						initial={{ opacity: 0}}
+						initial={{ opacity: 0 }}
 						animate={{
 							opacity: 1,
 						}}
-						// transition={{
-						// 	delay: 0.6,
-						// 	duration: 1.5,
-						// 	y: { repeat: Infinity, repeatType: "mirror", duration: 6 },
-						// }}
 					>
 						<Text fontSize="6xl" fontWeight="bold">
-							Studying Eukaryotic Defense
+							Studying Eukaryotic Defenses
 						</Text>
 
-					{/* Subtitle */}
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 1, duration: 2 }}
-					>
-						<Text textStyle="5xl" fontWeight="bold">
-							feat. The Jordan Lab
-						</Text>
+						{/* Subtitle */}
+						<motion.div
+							initial={{ opacity: 0, y: 100 }}
+							// animate={{ opacity: 1 }}
+							// transition={{ delay: 3, duration: 2 }}
+							animate={{ opacity: 1, y: 0 }} // end at its natural position
+							transition={{ delay: 3, duration: 2, ease: "easeOut" }}
+						>
+							<Text textStyle="5xl" fontWeight="bold">
+								feat. The Jordan Lab
+							</Text>
+						</motion.div>
 					</motion.div>
-					</motion.div>
-
 				</Box>
 			</Flex>
 
