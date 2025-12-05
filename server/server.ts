@@ -16,7 +16,7 @@ app.use(express.json());
 // local server
 // app.use(cors({ credentials: true, origin: "http://localhost:5173" })); //test
 // app.use(cors({ credentials: true, origin: "https://jordanlab-backend.onrender.com" })); // prod
-app.use(cors())
+app.use(cors({ credentials: true, origin: "https://67omgtest.netlify.app/" }))
 
 
 // app.use(cors({ credentials: true, origin: "*" }));
