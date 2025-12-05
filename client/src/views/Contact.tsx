@@ -16,7 +16,7 @@ export const Contact: React.FC = () => {
 	return (
 		<Box paddingTop={75} paddingX={{ base: 4, md: 8 }}>
 			{/* Page Title */}
-			<Text textStyle="6xl" marginBottom="30px" alignSelf="flex-start">
+			<Text textStyle="6xl" marginBottom="30px">
 				Contact
 			</Text>
 
