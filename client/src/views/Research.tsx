@@ -1,7 +1,8 @@
 import { Box, Flex, List, Text } from "@chakra-ui/react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import BacteriaCloud from "../components/BacteriaCloud";
+import BacteriaCloud from "../components/ImageCloud";
+import CloudedSection from "../components/CloudedSection";
 
 export const Research: React.FC = () => {
 	const sections = [
@@ -91,6 +92,8 @@ export const Research: React.FC = () => {
 					</List.Root>
 				</Box>
 			</Flex> */}
+			{/* <CloudedSection> */}
+
 			{sections.map((section, i) => {
 				// eslint-disable-next-line react-hooks/rules-of-hooks
 				const ref = useRef<HTMLDivElement>(null);
@@ -99,7 +102,7 @@ export const Research: React.FC = () => {
 
 				return (
 					<Box position="relative" minHeight="100vh" overflow="hidden">
-						<BacteriaCloud></BacteriaCloud>
+						{/* <BacteriaCloud></BacteriaCloud> */}
 
 						<motion.div
 							key={i}
@@ -118,15 +121,16 @@ export const Research: React.FC = () => {
 								minHeight="100vh"
 								color="white"
 							>
-								<Text textStyle="5xl" marginBottom={6}>
+								<Text textStyle="5xl" marginBottom={6} >
 									{section.title}
 								</Text>
-								<Text>{section.text}</Text>
+								<Text px={{ base: 4, md: 8 }} maxW="120ch" mx="auto">{section.text}</Text>
 							</Flex>
 						</motion.div>
 					</Box>
 				);
 			})}
+			{/* </CloudedSection> */}
 		</Flex>
 	);
 };

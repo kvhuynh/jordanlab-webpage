@@ -27,7 +27,7 @@ const bacteriaPositions = [
 
 
 
-export const BacteriaCloud = () => {
+export const HeaderCloud = () => {
   return (
     <>
       {bacteriaPositions.map((bact, i) => (
@@ -66,4 +66,4 @@ export const BacteriaCloud = () => {
   );
 };
 
-export default BacteriaCloud;
+export default HeaderCloud;

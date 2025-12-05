@@ -1,159 +1,11 @@
-// import { Box, Flex, Text, Link, Image } from "@chakra-ui/react";
-// import { Parallax } from "react-scroll-parallax";
-// import { motion, useScroll, useTransform } from "framer-motion";
-
-// import videoSrc from "../assets/amoeba_timelapse.mp4";
-// import lmpLogo from "../assets/uw-lab-medicine-pathology-inverted.svg";
-// import microLogo from "../assets/uw-dept-logo-department-of-microbiology/uw-dept-logo-department-of-microbiology-horizontal-inverted.svg";
-
-// export const Home: React.FC = () => {
-// 	const { scrollY } = useScroll();
-
-// 	// Text opacity goes from 1 → 0 by 200px of scroll
-// 	const opacity = useTransform(scrollY, [0, 200], [1, 0]);
-
-// 	return (
-// 		<motion.div
-// 			style={{
-// 				opacity,
-// 				// display: "flex",
-// 				// justifyContent: "center",
-// 				// alignItems: "center",
-// 				// minHeight: "60vh",
-// 			}}
-// 		>
-// 			<Box minHeight="100vh" overflow="hidden">
-// 				<Parallax speed={-20}>
-// 					<Flex
-// 						position="relative"
-// 						zIndex={1}
-// 						direction="column"
-// 						align="center"
-// 						justify="center"
-// 						minHeight="100vh"
-// 						color="white"
-// 						bg="rgba(0, 0, 0, 0.3)"
-// 					>
-// 						<Text fontSize="6xl" fontWeight="bold">
-// 							Understanding Eukaryotic Antiviral Defense
-// 						</Text>
-// 					</Flex>
-// 				</Parallax>
-
-// 				<Parallax speed={-20}>
-// 					<Flex
-// 						position="relative"
-// 						zIndex={1}
-// 						direction="column"
-// 						align="center"
-// 						justify="center"
-// 						minHeight="100vh"
-// 						color="white"
-// 						bg="rgba(0, 0, 0, 0.3)"
-// 					>
-// 						<Text fontSize="3xl" fontWeight="bold">
-// 							Viruses infect a wide range of organisms, from protists, algae,
-// 							and fungi to plants and animals, relying on host cellular
-// 							machinery for replication and spread. As hosts evolve defense
-// 							pathways to restrict infection, viruses concurrently develop
-// 							countermeasures that suppress or evade these defenses. This
-// 							ongoing co-evolution drives a continual host–virus arms race. Our
-// 							lab investigates the identification, regulation, evolution, and
-// 							antagonism of antiviral systems across diverse eukaryotic
-// 							lineages.
-// 						</Text>
-// 					</Flex>
-// 				</Parallax>
-// 				<Parallax speed={-20}>
-// 					<Flex
-// 						position="relative"
-// 						zIndex={1}
-// 						direction="column"
-// 						align="center"
-// 						justify="center"
-// 						minHeight="100vh"
-// 						color="white"
-// 						bg="rgba(0, 0, 0, 0.3)"
-// 					>
-// 						<Text fontSize="4xl" fontWeight="bold">
-// 							research highlights
-// 						</Text>
-// 					</Flex>
-// 				</Parallax>
-// 				<Parallax speed={-20}>
-// 					<Flex
-// 						position="relative"
-// 						zIndex={1}
-// 						direction="column"
-// 						align="center"
-// 						justify="center"
-// 						minHeight="100vh"
-// 						color="white"
-// 						bg="rgba(0, 0, 0, 0.3)"
-// 					>
-// 						<Text fontSize="4xl" fontWeight="bold">
-// 							areas of research
-// 						</Text>
-// 					</Flex>
-// 				</Parallax>
-// 				<Parallax speed={-20}>
-// 					<Flex
-// 						position="relative"
-// 						zIndex={1}
-// 						direction="column"
-// 						align="center"
-// 						justify="center"
-// 						minHeight="100vh"
-// 						color="white"
-// 						bg="rgba(0, 0, 0, 0.3)"
-// 					>
-// 						<Text fontSize="4xl" fontWeight="bold">
-// 							sponsors and affiliations
-// 						</Text>
-// 						<Flex direction="row" align="center" justifyContent={"center"}>
-// 							<Link href="https://dlmp.uw.edu/" target="_blank">
-// 								<Image src={lmpLogo} height="100px"></Image>
-// 							</Link>
-// 							<Link
-// 								href="https://microbiology.washington.edu/uw-microbiology-home"
-// 								target="_blank"
-// 							>
-// 								<Image src={microLogo} height="60px"></Image>
-// 							</Link>
-// 						</Flex>
-// 					</Flex>
-// 				</Parallax>
-
-// 				{/* Foreground Content */}
-// 				{/* <Flex
-// 				position="relative"
-// 				zIndex={1}
-// 				direction="column"
-// 				align="center"
-// 				justify="center"
-// 				height="100vh"
-// 				color="white"
-// 				bg="rgba(0, 0, 0, 0.3)" // Optional dark overlay
-// 			>
-// 				<Text fontSize="4xl" fontWeight="bold">
-// 					jordan lab
-// 				</Text>
-// 			</Flex> */}
-// 			</Box>
-// 		</motion.div>
-// 	);
-// };
-
-// export default Home;
-
-import { Box, Flex, Text, Link, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, Link, Image, Carousel } from "@chakra-ui/react";
 import { Parallax } from "react-scroll-parallax";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { BacteriaCloud } from "../components/BacteriaCloud";
 
 import videoSrc from "../assets/amoeba_timelapse.mp4";
 import lmpLogo from "../assets/uw-lab-medicine-pathology-inverted.svg";
 import microLogo from "../assets/uw-dept-logo-department-of-microbiology/uw-dept-logo-department-of-microbiology-horizontal-inverted.svg";
+import HeaderCloud from "../components/HeaderCloud";
 
 export const Home: React.FC = () => {
 	const { scrollY } = useScroll();
@@ -175,9 +27,7 @@ export const Home: React.FC = () => {
 				// bg="rgba(0, 0, 0, 0.3)"
 			>
 				<Box position="relative" display="inline-block">
-					{/* Floating bacteria */}
-					<BacteriaCloud />
-
+					<HeaderCloud />
 					{/* Main title with float */}
 					<motion.div
 						initial={{ opacity: 0 }}
@@ -204,7 +54,7 @@ export const Home: React.FC = () => {
 					</motion.div>
 				</Box>
 			</Flex>
-
+			{/* </CloudedSection> */}
 			<motion.div
 				style={{
 					opacity: aboutOpacity,
@@ -219,9 +69,11 @@ export const Home: React.FC = () => {
 						justify="center"
 						minHeight="100vh"
 						color="white"
-						bg="rgba(0, 0, 0, 0.3)"
 					>
 						<Text fontSize="3xl" fontWeight="bold">
+							Our Research <br />
+						</Text>
+						<Text fontSize="2xl">
 							Viruses infect a wide range of organisms, from protists, algae,
 							and fungi to plants and animals, relying on host cellular
 							machinery for replication and spread. As hosts evolve defense
@@ -235,15 +87,6 @@ export const Home: React.FC = () => {
 					</Flex>
 				</Parallax>
 			</motion.div>
-			{/* <motion.div
-				style={{
-					opacity,
-					// display: "flex",
-					// justifyContent: "center",
-					// alignItems: "center",
-					// minHeight: "60vh",
-				}}
-			></motion.div> */}
 			<Parallax speed={-20}>
 				<Flex
 					position="relative"
@@ -253,7 +96,6 @@ export const Home: React.FC = () => {
 					justify="center"
 					minHeight="100vh"
 					color="white"
-					bg="rgba(0, 0, 0, 0.3)"
 				>
 					<Text fontSize="4xl" fontWeight="bold">
 						research highlights
@@ -269,7 +111,6 @@ export const Home: React.FC = () => {
 					justify="center"
 					minHeight="100vh"
 					color="white"
-					bg="rgba(0, 0, 0, 0.3)"
 				>
 					<Text fontSize="4xl" fontWeight="bold">
 						areas of research
@@ -285,7 +126,6 @@ export const Home: React.FC = () => {
 					justify="center"
 					minHeight="100vh"
 					color="white"
-					bg="rgba(0, 0, 0, 0.3)"
 				>
 					<Text fontSize="4xl" fontWeight="bold">
 						sponsors and affiliations
@@ -303,22 +143,6 @@ export const Home: React.FC = () => {
 					</Flex>
 				</Flex>
 			</Parallax>
-
-			{/* Foreground Content */}
-			{/* <Flex
-				position="relative"
-				zIndex={1}
-				direction="column"
-				align="center"
-				justify="center"
-				height="100vh"
-				color="white"
-				bg="rgba(0, 0, 0, 0.3)" // Optional dark overlay
-			>
-				<Text fontSize="4xl" fontWeight="bold">
-					jordan lab
-				</Text>
-			</Flex> */}
 		</Box>
 	);
 };

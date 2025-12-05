@@ -46,7 +46,7 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 									</Text>
 									{p.email && (
 										<Link href={`mailto:${p.email}`}>
-											<Text textStyle="sm" color="blue">
+											<Text textStyle="sm" color="#0099ff">
 												{p.email}
 											</Text>
 										</Link>
