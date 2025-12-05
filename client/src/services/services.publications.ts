@@ -22,3 +22,5 @@ export const getPublications = async (orcidId: string) => {
     console.log(res)
 	return res.data;
 };
+
+

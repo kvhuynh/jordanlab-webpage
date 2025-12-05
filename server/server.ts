@@ -1,11 +1,15 @@
 export {};
 const express = require("express");
 const axios = require("axios");
+
 const cors = require("cors");
+require("dotenv").config();
+
 const app = express();
 const PORT = 3000;
 
 const { publicationRouter } = require("./routes/publications.routes");
+const { mapRouter } = require("./routes/maps.routes")
 
 app.use(express.json());
 
@@ -15,7 +19,7 @@ app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
 // app.use(cors({ credentials: true, origin: "*" }));
 
 app.use("/api/v1/publications", publicationRouter);
-
+app.use("/api/v1/maps", mapRouter);
 // local server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
