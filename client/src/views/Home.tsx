@@ -1,8 +1,7 @@
-import { Box, Flex, Text, Link, Image, Carousel } from "@chakra-ui/react";
+import { Box, Flex, Text, Link, Image } from "@chakra-ui/react";
 import { Parallax } from "react-scroll-parallax";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import videoSrc from "../assets/amoeba_timelapse.mp4";
 import lmpLogo from "../assets/uw-lab-medicine-pathology-inverted.svg";
 import microLogo from "../assets/uw-dept-logo-department-of-microbiology/uw-dept-logo-department-of-microbiology-horizontal-inverted.svg";
 import HeaderCloud from "../components/HeaderCloud";
@@ -11,7 +10,7 @@ export const Home: React.FC = () => {
 	const { scrollY } = useScroll();
 
 	// Text opacity goes from 1 → 0 by 200px of scroll
-	const titleOpacity = useTransform(scrollY, [0, 200], [1, 0]);
+	// const titleOpacity = useTransform(scrollY, [0, 200], [1, 0]);
 	const aboutOpacity = useTransform(scrollY, [200, 600], [0, 1]);
 
 	return (

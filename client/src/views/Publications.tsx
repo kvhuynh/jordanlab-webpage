@@ -1,14 +1,8 @@
 import {
 	Box,
 	Flex,
-	Spacer,
 	Link,
-	Button,
-	Card,
-	Stack,
-	Image,
 	Text,
-	Separator,
 	Spinner,
 } from "@chakra-ui/react";
 

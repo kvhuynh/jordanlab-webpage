@@ -33,21 +33,13 @@
 // };
 // export default Footer;
 
-import { useState } from "react";
+
 import {
-	Container,
-	HStack,
-	Icon,
-	Link,
-	Stack,
-	Image,
 	Box,
 	Flex,
 	Text,
 } from "@chakra-ui/react";
 
-import lmpLogo from "../assets/uw-lab-medicine-pathology.png";
-import microLogo from "../assets/uw-dept-logo-department-of-microbiology/uw-dept-logo-department-of-microbiology-horizontal.svg";
 
 export const Footer: React.FC = () => {
 	return (

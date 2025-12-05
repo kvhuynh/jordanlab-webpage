@@ -8,9 +8,9 @@ import {
 } from "@chakra-ui/react";
 // import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 // import { Icon } from "@chakra-ui/react";
-import { LuSearch } from "react-icons/lu";
+
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IconContext } from "react-icons";
+
 
 export const Nav: React.FC = () => {
 	const { open, onToggle } = useDisclosure();

@@ -1,8 +1,6 @@
-import { Box, Flex, List, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import BacteriaCloud from "../components/ImageCloud";
-import CloudedSection from "../components/CloudedSection";
 
 export const Research: React.FC = () => {
 	const sections = [

@@ -1,4 +1,4 @@
-import { motion, Transition } from "framer-motion";
+import { motion } from "framer-motion";
 import ReactLogo from "../assets/virus.png";
 
 const bacteriaPositions = [
