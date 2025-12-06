@@ -14,6 +14,8 @@ const { mapRouter } = require("./routes/maps.routes")
 app.use(express.json());
 
 const FRONTEND_URL = process.env.FRONTEND_URL;
+console.log(FRONTEND_URL);
+
 // local server
 // app.use(cors({ credentials: true, origin: "http://localhost:5173" })); //test
 // app.use(cors({ credentials: true, origin: "https://jordanlab-backend.onrender.com" })); // prod
