@@ -35,20 +35,18 @@ export const Contact: React.FC = () => {
 						loading="lazy"
 						allowFullScreen
 						referrerPolicy="no-referrer-when-downgrade"
-						// src={`https://www.google.com/maps/embed/v1/place?key=${mapsKey}&q=750+Republican+St,+Seattle,+WA+98109/@47.6234465,-122.3407912`}
 						src={embedUrl}
 					/>
 				</Box>
 
 				{/* Contact Info */}
 				<Flex flexDirection="column" flex="1" gap={6}>
-					{/* Available Positions */}
 					<Box>
 						<Text textStyle="4xl" marginBottom={2}>
 							Available Positions
 						</Text>
 						<Text>
-							Undergraduates, please contact the lab for current openings.
+							undergraDS
 						</Text>
 					</Box>
 
@@ -59,7 +57,7 @@ export const Contact: React.FC = () => {
 						</Text>
 						<Text>
 							F753 Building, 750 Republican Street <br />
-							Seattle, WA <br />
+							Seattle, WA 98102 <br />
 							T: 206-897-6160 <br />
 							E:{" "}
 							<Link href="mailto:txjordan@uw.edu" color="blue.400">
