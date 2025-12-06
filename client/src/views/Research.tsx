@@ -60,7 +60,8 @@ export const Research: React.FC = () => {
 			<Text textStyle="6xl" alignSelf="flex-start" marginBottom="30px">
 				Research
 			</Text>
-			<Text textStyle="5xl">Research Goals</Text>
+			<Text textStyle="5xl">Our Goals</Text>
+			<br />
 			<List.Root alignSelf={"center"}>
 				<List.Item>
 					Deepen our understanding of how mammalian antiviral responses are
@@ -74,17 +75,7 @@ export const Research: React.FC = () => {
 					Identify and understand any evolutionary conservation between viruses
 					and hosts
 				</List.Item>
-				<List.Item>
-					Viruses infect a wide range of organisms, from protists, algae,
-							and fungi to plants and animals, relying on host cellular
-							machinery for replication and spread. As hosts evolve defense
-							pathways to restrict infection, viruses concurrently develop
-							countermeasures that suppress or evade these defenses. This
-							ongoing co-evolution drives a continual host–virus arms race. Our
-							lab investigates the identification, regulation, evolution, and
-							antagonism of antiviral systems across diverse eukaryotic
-							lineages.
-				</List.Item>
+
 			</List.Root>
 			{sections.map((section, i) => {
 				// eslint-disable-next-line react-hooks/rules-of-hooks
