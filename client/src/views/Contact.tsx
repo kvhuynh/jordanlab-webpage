@@ -9,18 +9,15 @@ export const Contact: React.FC = () => {
 
 	useEffect(() => {
 		getMaps().then((res) => {
-            setEmbedUrl(res.url)
+			setEmbedUrl(res.url);
 		});
 	});
 
 	return (
-		<Box paddingTop={75} paddingX={{ base: 4, md: 8 }}>
-			{/* Page Title */}
-			<Text textStyle="6xl" marginBottom="30px">
+		<Flex paddingTop={75} paddingX={{ base: 4, md: 8 }}>
+			<Text textStyle="6xl" marginBottom="30px" alignSelf={"flex-start"}>
 				Contact
 			</Text>
-
-			{/* Map + Info Section */}
 			<Flex
 				flexDirection={{ base: "column", md: "row" }}
 				justifyContent="space-between"
@@ -45,9 +42,7 @@ export const Contact: React.FC = () => {
 						<Text textStyle="4xl" marginBottom={2}>
 							Available Positions
 						</Text>
-						<Text>
-							undergraDS
-						</Text>
+						<Text>undergraDS</Text>
 					</Box>
 
 					{/* Office */}
@@ -75,7 +70,7 @@ export const Contact: React.FC = () => {
 					</Box>
 				</Flex>
 			</Flex>
-		</Box>
+		</Flex>
 	);
 };
 

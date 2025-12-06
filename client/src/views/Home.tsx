@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
 							transition={{ delay: 3, duration: 2, ease: "easeOut" }}
 						>
 							<Text textStyle="5xl" fontWeight="bold">
-								feat. The Jordan Lab
+								with The Jordan Lab
 							</Text>
 						</motion.div>
 					</motion.div>
@@ -73,6 +73,10 @@ export const Home: React.FC = () => {
 							Our Research <br />
 						</Text>
 						<Text fontSize="2xl">
+							We utilizes discovery-driven techniques to ask and answer
+							questions about virus-host interactions across eukaryotes in order
+							to understand the regulation of and expand our understanding of
+							eukaryotic antiviral responses. <br /> <br />
 							Viruses infect a wide range of organisms, from protists, algae,
 							and fungi to plants and animals, relying on host cellular
 							machinery for replication and spread. As hosts evolve defense

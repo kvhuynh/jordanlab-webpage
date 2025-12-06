@@ -1,6 +1,7 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, List, Text } from "@chakra-ui/react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Items } from "./../../node_modules/framer-motion/dist/cjs/index";
 
 export const Research: React.FC = () => {
 	const sections = [
@@ -59,6 +60,32 @@ export const Research: React.FC = () => {
 			<Text textStyle="6xl" alignSelf="flex-start" marginBottom="30px">
 				Research
 			</Text>
+			<Text textStyle="5xl">Research Goals</Text>
+			<List.Root alignSelf={"center"}>
+				<List.Item>
+					Deepen our understanding of how mammalian antiviral responses are
+					regulated
+				</List.Item>
+				<List.Item>
+					Expand our understanding of the evolutionary solutions to viral
+					infection
+				</List.Item>
+				<List.Item>
+					Identify and understand any evolutionary conservation between viruses
+					and hosts
+				</List.Item>
+				<List.Item>
+					Viruses infect a wide range of organisms, from protists, algae,
+							and fungi to plants and animals, relying on host cellular
+							machinery for replication and spread. As hosts evolve defense
+							pathways to restrict infection, viruses concurrently develop
+							countermeasures that suppress or evade these defenses. This
+							ongoing co-evolution drives a continual host–virus arms race. Our
+							lab investigates the identification, regulation, evolution, and
+							antagonism of antiviral systems across diverse eukaryotic
+							lineages.
+				</List.Item>
+			</List.Root>
 			{sections.map((section, i) => {
 				// eslint-disable-next-line react-hooks/rules-of-hooks
 				const ref = useRef<HTMLDivElement>(null);
@@ -75,7 +102,6 @@ export const Research: React.FC = () => {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
 							transition={{ duration: 0.8 }}
-
 						>
 							<Flex
 								position="relative"
@@ -86,10 +112,12 @@ export const Research: React.FC = () => {
 								minHeight="100vh"
 								color="white"
 							>
-								<Text textStyle="5xl" marginBottom={6} >
+								<Text textStyle="5xl" marginBottom={6}>
 									{section.title}
 								</Text>
-								<Text px={{ base: 4, md: 8 }} maxW="120ch" mx="auto">{section.text}</Text>
+								<Text px={{ base: 4, md: 8 }} maxW="120ch" mx="auto">
+									{section.text}
+								</Text>
 							</Flex>
 						</motion.div>
 					</Box>
