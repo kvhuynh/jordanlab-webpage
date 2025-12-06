@@ -11,17 +11,17 @@
 // }
 
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
 const http = axios.create({
 	// baseURL: "http://localhost:3000", // your backend URL
-	baseURL: "https://jordanlab-backend.onrender.com" // production
+	// baseURL: "https://jordanlab-backend.onrender.com" // production
+	baseURL: API,
 });
 
 export const getPublications = async (orcidId: string) => {
 	console.log("fetching publications from backend");
 	const res = await http.get(`/api/v1/publications/${orcidId}`);
-    console.log(res)
+	console.log(res);
 	return res.data;
 };
-
-

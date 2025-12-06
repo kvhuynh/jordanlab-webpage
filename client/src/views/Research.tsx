@@ -59,39 +59,6 @@ export const Research: React.FC = () => {
 			<Text textStyle="6xl" alignSelf="flex-start" marginBottom="30px">
 				Research
 			</Text>
-			{/* <Flex
-				position="relative"
-				zIndex={1}
-				direction="column"
-				align="center"
-				justify="center"
-				minHeight="50vh"
-				color="white"
-				// bg="rgba(0, 0, 0, 0.3)"
-			>
-				<Text textStyle={"5xl"}>Goals</Text>
-				<Box textStyle={"xl"}>
-					<List.Root>
-						<List.Item>
-							Deepen our understanding of how mammalian antiviral responses are
-							regulated
-						</List.Item>
-						<List.Item>
-							Expand our understanding of the evolutionary solutions to viral
-							infection
-						</List.Item>
-						<List.Item>
-							Identify and understand any evolutionary conservation between the
-							two
-						</List.Item>
-						<List.Item>
-							understand how viruses counter these processes.
-						</List.Item>
-					</List.Root>
-				</Box>
-			</Flex> */}
-			{/* <CloudedSection> */}
-
 			{sections.map((section, i) => {
 				// eslint-disable-next-line react-hooks/rules-of-hooks
 				const ref = useRef<HTMLDivElement>(null);
@@ -128,7 +95,6 @@ export const Research: React.FC = () => {
 					</Box>
 				);
 			})}
-			{/* </CloudedSection> */}
 		</Flex>
 	);
 };
