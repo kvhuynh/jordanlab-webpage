@@ -1,7 +1,5 @@
 import { Box, Flex, List, Text } from "@chakra-ui/react";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-// import { Items } from "./../../node_modules/framer-motion/dist/cjs/index";
+import { FadeInSection } from "../components/FadeInSection";
 
 export const Research: React.FC = () => {
 	const sections = [
@@ -60,58 +58,64 @@ export const Research: React.FC = () => {
 			<Text textStyle="6xl" alignSelf="flex-start" marginBottom="30px">
 				Research
 			</Text>
-			<Text textStyle="5xl">Our Goals</Text>
-			<br />
-			<List.Root alignSelf={"center"}>
-				<List.Item>
-					Deepen our understanding of how mammalian antiviral responses are
-					regulated
-				</List.Item>
-				<List.Item>
-					Expand our understanding of the evolutionary solutions to viral
-					infection
-				</List.Item>
-				<List.Item>
-					Identify and understand any evolutionary conservation between viruses
-					and hosts
-				</List.Item>
+			<Box position="relative" minHeight="100vh" overflow="hidden">
+				<FadeInSection>
+					<Flex
+						position="relative"
+						zIndex={1}
+						direction="column"
+						align="center"
+						justify="center"
+						minHeight="100vh"
+						color="var(--text)"
+					>
+						<Text textStyle="5xl" marginBottom={6}>
+							Our Goals
+						</Text>
 
-			</List.Root>
-			{sections.map((section, i) => {
-				// eslint-disable-next-line react-hooks/rules-of-hooks
-				const ref = useRef<HTMLDivElement>(null);
-				// eslint-disable-next-line react-hooks/rules-of-hooks
-				const inView = useInView(ref, { amount: 0.5 }); // triggers when 50% visible
+						<Text px={{ base: 4, md: 8 }} maxW="120ch" mx="auto">
+							<List.Root alignSelf="center">
+								<List.Item>
+									Deepen our understanding of how mammalian antiviral responses
+									are regulated
+								</List.Item>
+								<List.Item>
+									Expand our understanding of the evolutionary solutions to
+									viral infection
+								</List.Item>
+								<List.Item>
+									Identify and understand any evolutionary conservation between
+									viruses and hosts
+								</List.Item>
+							</List.Root>
+						</Text>
+					</Flex>
+				</FadeInSection>
+			</Box>
 
-				return (
-					<Box position="relative" minHeight="100vh" overflow="hidden">
-						<motion.div
-							key={i}
-							ref={ref}
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-							transition={{ duration: 0.8 }}
+			{sections.map((section, i) => (
+				<Box key={i} position="relative" minHeight="100vh" overflow="hidden">
+					<FadeInSection>
+						<Flex
+							position="relative"
+							zIndex={1}
+							direction="column"
+							align="center"
+							justify="center"
+							minHeight="125vh"
+							color="var(--text)"
 						>
-							<Flex
-								position="relative"
-								zIndex={1}
-								direction="column"
-								align="center"
-								justify="center"
-								minHeight="100vh"
-								color="var(--text)"
-							>
-								<Text textStyle="5xl" marginBottom={6}>
-									{section.title}
-								</Text>
-								<Text px={{ base: 4, md: 8 }} maxW="120ch" mx="auto">
-									{section.text}
-								</Text>
-							</Flex>
-						</motion.div>
-					</Box>
-				);
-			})}
+							<Text textStyle="5xl" marginBottom={6}>
+								{section.title}
+							</Text>
+
+							<Text px={{ base: 4, md: 8 }} textStyle="xl" maxW="120ch" mx="auto">
+								{section.text}
+							</Text>
+						</Flex>
+					</FadeInSection>
+				</Box>
+			))}
 		</Flex>
 	);
 };

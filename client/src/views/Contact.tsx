@@ -1,10 +1,7 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { getMaps } from "../services/services.maps";
-
 export const Contact: React.FC = () => {
-	//   const mapsKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-
 	const [embedUrl, setEmbedUrl] = useState("");
 
 	useEffect(() => {
@@ -14,7 +11,11 @@ export const Contact: React.FC = () => {
 	});
 
 	return (
-		<Flex paddingTop={75} paddingX={{ base: 4, md: 8 }} flexDirection={"column"} >
+		<Flex
+			paddingTop={75}
+			paddingX={{ base: 4, md: 8 }}
+			flexDirection={"column"}
+		>
 			<Text textStyle="6xl" marginBottom="30px" alignSelf={"flex-start"}>
 				Contact
 			</Text>
@@ -42,7 +43,7 @@ export const Contact: React.FC = () => {
 						<Text textStyle="4xl" marginBottom={2}>
 							Available Positions
 						</Text>
-						<Text>undergraDS</Text>
+						<Text textStyle="xl">undergraDS pleASe</Text>
 					</Box>
 
 					{/* Office */}
@@ -50,7 +51,7 @@ export const Contact: React.FC = () => {
 						<Text textStyle="4xl" marginBottom={2}>
 							Office
 						</Text>
-						<Text>
+						<Text textStyle="xl">
 							F753 Building, 750 Republican Street <br />
 							Seattle, WA 98102 <br />
 							T: 206-897-6160 <br />
@@ -66,7 +67,7 @@ export const Contact: React.FC = () => {
 						<Text textStyle="4xl" marginBottom={2}>
 							Lab Mailing Address
 						</Text>
-						<Text>Mailbox: 3508070</Text>
+						<Text textStyle="xl">Mailbox: 3508070</Text>
 					</Box>
 				</Flex>
 			</Flex>

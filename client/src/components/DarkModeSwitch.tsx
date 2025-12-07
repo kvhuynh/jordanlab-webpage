@@ -3,11 +3,9 @@ import { Switch, Flex, Icon } from "@chakra-ui/react";
 // import { FaSun, FaMoon } from "react-icons/fa";
 // import { useTheme } from "../hooks/useTheme";
 
-
 // export const DarkModeSwitch: React.FC = () => {
 // 	const [darkMode, setDarkMode] = useState(false);
 // 	const { theme, toggleTheme } = useTheme();
-
 
 // 	return (
 // 		<Flex alignItems="center" gap={2}>
@@ -35,30 +33,47 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "../hooks/useTheme";
 
 export const DarkModeSwitch: React.FC = () => {
-  const { theme, toggleTheme } = useTheme();
+	const { theme, toggleTheme } = useTheme();
 
-  // checked = true when theme === "dark"
-  const isDark = theme === "dark";
+	// checked = true when theme === "dark"
+	const isDark = theme === "dark";
 
-  return (
-    <Flex alignItems="center" gap={2}>
-      <Switch.Root
-        checked={isDark}
-        onCheckedChange={toggleTheme}
-        colorPalette={isDark ? "blue" : "yellow"}
-      >
-        <Icon as={FaSun} color={isDark ? "gray.600" : "yellow.200"} />
+	return (
+		// <Flex alignItems="center" gap={2}>
+		//   <Switch.Root
+		//     checked={isDark}
+		//     onCheckedChange={toggleTheme}
+		//     colorPalette={isDark ? "blue" : "yellow"}
+		//   >
+		//     <Icon as={FaSun} color={isDark ? "gray.600" : "yellow.200"} />
 
-        <Switch.HiddenInput />
+		//     <Switch.HiddenInput />
 
-        <Switch.Control>
-          <Switch.Thumb />
-        </Switch.Control>
+		//     <Switch.Control>
+		//       <Switch.Thumb />
+		//     </Switch.Control>
 
-        <Icon as={FaMoon} color={isDark ? "blue.200" : "gray.600"} />
+		//     <Icon as={FaMoon} color={isDark ? "blue.200" : "gray.600"} />
 
-        <Switch.Label />
-      </Switch.Root>
-    </Flex>
-  );
+		//     <Switch.Label />
+		//   </Switch.Root>
+		// </Flex>
+
+		<Flex alignItems="center" gap={2}>
+			<Switch.Root
+				colorPalette="blue"
+				size="lg"
+				checked={isDark}
+				onCheckedChange={toggleTheme}
+			>
+				<Switch.HiddenInput />
+				<Switch.Control>
+					<Switch.Thumb />
+					<Switch.Indicator fallback={<Icon as={FaSun} color="yellow.400" />}>
+						<Icon as={FaMoon} color="blue.200" />
+					</Switch.Indicator>
+				</Switch.Control>
+			</Switch.Root>
+		</Flex>
+	);
 };
