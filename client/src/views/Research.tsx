@@ -1,7 +1,7 @@
 import { Box, Flex, List, Text } from "@chakra-ui/react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Items } from "./../../node_modules/framer-motion/dist/cjs/index";
+// import { Items } from "./../../node_modules/framer-motion/dist/cjs/index";
 
 export const Research: React.FC = () => {
 	const sections = [
