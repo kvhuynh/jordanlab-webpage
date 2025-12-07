@@ -8,7 +8,7 @@ import {
 	Separator,
 } from "@chakra-ui/react";
 
-import { Person, people } from "../data/people"
+import { Person, people } from "../data/people";
 
 const Section: React.FC<{ title: string; members: Person[] }> = ({
 	title,
@@ -20,24 +20,25 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 		<Box mt={10}>
 			<Box maxW="800px" mx="auto">
 				<Flex bg="" py={2} px={2}>
-					<Text textStyle="4xl" color="white">
+					<Text textStyle="4xl" color="var(--text)">
 						{title}
 					</Text>
 				</Flex>
 				{members.map((p, idx) => (
 					<Card.Root
 						key={idx}
-						backgroundColor=""
-						border="none"
-						borderRadius={0}
+						// borderWidth="5px"
+						// borderRadius={0}
+						borderRadius={"md"}
 						mt={4}
 						maxW="800px" // limit width
 						w="100%" // allow responsive shrink
 						mx="auto"
+						bg="none"
 					>
-						<Card.Body gap="2">
+						<Card.Body gap="2" bg="var(--bg-secondary)">
 							<Flex justifyContent="space-between" align="flex-start">
-								<Card.Title mt="2" color="white">
+								<Card.Title mt="2" color="var(--text)">
 									<Text fontSize="xl" fontWeight="bold">
 										{p.name}
 									</Text>
@@ -64,18 +65,20 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 								)}
 							</Flex>
 							{p.description && (
-								<Card.Description color="">{p.description}</Card.Description>
+								<Card.Description color="var(--text)">
+									{p.description}
+								</Card.Description>
+							)}
+							{p.links && (
+								<Card.Footer justifyContent="flex-end" gap={4}>
+									{p.links.map((l, i) => (
+										<Link key={i} href={l.href}>
+											{l.label}
+										</Link>
+									))}
+								</Card.Footer>
 							)}
 						</Card.Body>
-						{p.links && (
-							<Card.Footer justifyContent="flex-end" gap={4}>
-								{p.links.map((l, i) => (
-									<Link key={i} href={l.href}>
-										{l.label}
-									</Link>
-								))}
-							</Card.Footer>
-						)}
 					</Card.Root>
 				))}
 			</Box>

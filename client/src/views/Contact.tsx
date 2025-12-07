@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
 	});
 
 	return (
-		<Flex paddingTop={75} paddingX={{ base: 4, md: 8 }}>
+		<Flex paddingTop={75} paddingX={{ base: 4, md: 8 }} flexDirection={"column"} >
 			<Text textStyle="6xl" marginBottom="30px" alignSelf={"flex-start"}>
 				Contact
 			</Text>

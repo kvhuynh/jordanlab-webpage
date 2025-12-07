@@ -7,7 +7,7 @@ import People from "./views/People";
 import News from "./views/News";
 import Nav from "./components/Nav";
 import "./App.css";
-// import "./index.css";
+import "./index.css";
 import Research from "./views/Research";
 import { Box } from "@chakra-ui/react";
 import Footer from "./components/Footer";

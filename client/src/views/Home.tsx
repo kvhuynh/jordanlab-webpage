@@ -8,9 +8,6 @@ import HeaderCloud from "../components/HeaderCloud";
 
 export const Home: React.FC = () => {
 	const { scrollY } = useScroll();
-
-	// Text opacity goes from 1 → 0 by 200px of scroll
-	// const titleOpacity = useTransform(scrollY, [0, 200], [1, 0]);
 	const aboutOpacity = useTransform(scrollY, [200, 600], [0, 1]);
 
 	return (
@@ -22,12 +19,10 @@ export const Home: React.FC = () => {
 				align="center"
 				justify="center"
 				minHeight="100vh"
-				color="white"
-				// bg="rgba(0, 0, 0, 0.3)"
+				color="var(--text)"
 			>
 				<Box position="relative" display="inline-block">
 					<HeaderCloud />
-					{/* Main title with float */}
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{
@@ -41,9 +36,7 @@ export const Home: React.FC = () => {
 						{/* Subtitle */}
 						<motion.div
 							initial={{ opacity: 0, y: 100 }}
-							// animate={{ opacity: 1 }}
-							// transition={{ delay: 3, duration: 2 }}
-							animate={{ opacity: 1, y: 0 }} // end at its natural position
+							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 3, duration: 2, ease: "easeOut" }}
 						>
 							<Text textStyle="5xl" fontWeight="bold">
@@ -53,7 +46,6 @@ export const Home: React.FC = () => {
 					</motion.div>
 				</Box>
 			</Flex>
-			{/* </CloudedSection> */}
 			<motion.div
 				style={{
 					opacity: aboutOpacity,
@@ -67,7 +59,7 @@ export const Home: React.FC = () => {
 						align="center"
 						justify="center"
 						minHeight="100vh"
-						color="white"
+						color="var(--text)"
 					>
 						<Text fontSize="3xl" fontWeight="bold">
 							Our Research <br />
@@ -98,22 +90,7 @@ export const Home: React.FC = () => {
 					align="center"
 					justify="center"
 					minHeight="100vh"
-					color="white"
-				>
-					<Text fontSize="4xl" fontWeight="bold">
-						research highlights
-					</Text>
-				</Flex>
-			</Parallax>
-			<Parallax speed={-20}>
-				<Flex
-					position="relative"
-					zIndex={1}
-					direction="column"
-					align="center"
-					justify="center"
-					minHeight="100vh"
-					color="white"
+					color="var(--text)"
 				>
 					<Text fontSize="4xl" fontWeight="bold">
 						areas of research
@@ -128,7 +105,7 @@ export const Home: React.FC = () => {
 					align="center"
 					justify="center"
 					minHeight="100vh"
-					color="white"
+					color="var(--text)"
 				>
 					<Text fontSize="4xl" fontWeight="bold">
 						sponsors and affiliations

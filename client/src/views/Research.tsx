@@ -85,8 +85,6 @@ export const Research: React.FC = () => {
 
 				return (
 					<Box position="relative" minHeight="100vh" overflow="hidden">
-						{/* <BacteriaCloud></BacteriaCloud> */}
-
 						<motion.div
 							key={i}
 							ref={ref}
@@ -101,7 +99,7 @@ export const Research: React.FC = () => {
 								align="center"
 								justify="center"
 								minHeight="100vh"
-								color="white"
+								color="var(--text)"
 							>
 								<Text textStyle="5xl" marginBottom={6}>
 									{section.title}

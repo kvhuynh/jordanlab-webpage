@@ -2,10 +2,10 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 
 export const Footer: React.FC = () => {
 	return (
-		<Box bg="#141414" w="100%" position="sticky">
-			<Flex justifyContent={"center"} alignItems={"center"} h={65}>
-				<Text fontSize={"medium"} fontWeight={"bold"}>
-					© Kevin Huynh
+		<Box bg="var(--bg-nav)" w="100%" position="sticky">
+			<Flex justifyContent={"center"} alignItems={"center"}>
+				<Text color="var(--text)" fontSize={"small"}>
+					© kevin huynh :)
 				</Text>
 			</Flex>
 		</Box>
