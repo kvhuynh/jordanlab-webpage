@@ -4,8 +4,11 @@ import {
 	Link,
 	IconButton,
 	VStack,
+	Image,
 	useDisclosure,
 } from "@chakra-ui/react";
+
+import logo from "../assets/logo1.png";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -16,9 +19,24 @@ export const Nav: React.FC = () => {
 	return (
 		<Box position="fixed" w="100%" bg="var(--bg-nav);" p={4} zIndex="sticky">
 			<Flex justify="space-between" align="center">
-				{/* Left: Lab Name */}
-				<Link href="/" fontSize="2xl" fontWeight="bold" color="var(--text)">
-					🦠 The Jordan Lab
+				<Link href="/" display="flex" alignItems="center">
+					<Box
+						height="30px" // ← navbar height stays fixed
+						width="150px"
+						overflow="visible" // allow logo to exceed this box visually
+						position="relative"
+					>
+						<Image
+							src={logo}
+							height="150px" // ← make this as large as you want
+							position="absolute" // remove from layout flow
+							top="50%"
+							left="50%"
+							transform="translate(-50%, -50%)"
+							// objectFit="contain"
+							pointerEvents="none"
+						/>
+					</Box>
 				</Link>
 
 				{/* Desktop Nav + Toggle */}
