@@ -96,10 +96,10 @@ export const Home: React.FC = () => {
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, scale: 1.2}}
+          animate={{ opacity: 1, scale: 1}}
           transition={{ delay: 4, duration: 1, ease: "linear" }}
         >
-          <Text textStyle="2xl" textAlign="center" maxW="600px" mt={4}>
+          <Text textStyle={["xl", "2xl"]} textAlign="center" maxW="120ch" mt={4}>
             We utilize discovery-driven techniques to ask and answer questions about virus-host
             interactions across eukaryotes in order to understand the regulation of and expand
             our understanding of eukaryotic antiviral responses.
