@@ -131,6 +131,7 @@ import {
 	useDisclosure,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { memo } from "react";
 
 import logo from "../assets/logo1.png";
 import { DarkModeSwitch } from "./DarkModeSwitch";
@@ -228,4 +229,4 @@ export const Nav: React.FC<{ show: boolean }> = ({ show }) => {
 	);
 };
 
-export default Nav;
+export default memo(Nav);
