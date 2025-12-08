@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import ImageCloud from "./ImageCloud";
 
 export const CloudedSection: React.FC<{
-  children: React.ReactNode;
+  children?: React.ReactNode;
   minHeight?: string | number;
 }> = ({ children, minHeight = "100vh" }) => {
   return (
@@ -10,7 +10,6 @@ export const CloudedSection: React.FC<{
       position="relative"
       minHeight={minHeight}
       overflow="hidden"
-    //   paddingY={10}
     >
       <ImageCloud />
       <Box position="relative" zIndex={1}>

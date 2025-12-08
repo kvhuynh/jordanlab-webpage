@@ -121,7 +121,6 @@
 
 // export default Nav;
 
-
 import {
 	Box,
 	Flex,
@@ -139,10 +138,9 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Nav: React.FC<{ show: boolean }> = ({ show }) => {
 	const { open, onToggle } = useDisclosure();
-
 	return (
 		<motion.div
-			initial={{ opacity: 0, y: -20 }}
+			initial={false} // ← prevents animation on mount
 			animate={{ opacity: show ? 1 : 0, y: show ? 0 : -20 }}
 			transition={{ duration: 0.6, ease: "easeOut" }}
 			style={{ position: "fixed", width: "100%", zIndex: 1000 }}

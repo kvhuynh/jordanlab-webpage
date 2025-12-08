@@ -16,7 +16,8 @@ import { useEffect, useState } from "react";
 
 function App() {
 	const location = useLocation();
-	const [showNav, setShowNav] = useState(true);
+	// const [showNav, setShowNav] = useState(true);
+	const [showNav, setShowNav] = useState(location.pathname !== "/");
 
 	useEffect(() => {
 		if (location.pathname === "/") {
@@ -28,6 +29,10 @@ function App() {
 			setShowNav(true);
 		}
 	}, [location.pathname]);
+
+	useEffect(() => {
+		window.history.scrollRestoration = "manual";
+	}, []);
 	return (
 		<>
 			<Nav show={showNav}></Nav>

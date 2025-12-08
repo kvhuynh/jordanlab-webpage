@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import VirusImage from "../assets/virus.png";
+import React from "react";
 
 // How many bacteria to spawn per section
 const COUNT = 67;
@@ -60,4 +61,5 @@ export const ImageCloud: React.FC = () => {
 	);
 };
 
-export default ImageCloud;
+// export default ImageCloud;
+export default React.memo(ImageCloud);
