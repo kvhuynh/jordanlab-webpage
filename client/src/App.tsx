@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "./views/Home";
 import Contact from "./views/Contact";
@@ -12,12 +12,25 @@ import Research from "./views/Research";
 import { Box } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import CloudedSection from "./components/CloudedSection";
+import { useEffect, useState } from "react";
 
 function App() {
-	
+	const location = useLocation();
+	const [showNav, setShowNav] = useState(true);
+
+	useEffect(() => {
+		if (location.pathname === "/") {
+			// hide nav during animation
+			setShowNav(false);
+			const timer = setTimeout(() => setShowNav(true), 4000);
+			return () => clearTimeout(timer);
+		} else {
+			setShowNav(true);
+		}
+	}, [location.pathname]);
 	return (
 		<>
-			<Nav></Nav>
+			<Nav show={showNav}></Nav>
 			<CloudedSection>
 				<Box margin={"0 auto"} maxWidth={"1200px"} px={{ base: 4, md: 8 }}>
 					<Routes>
@@ -27,7 +40,6 @@ function App() {
 						<Route path="/publications" element={<Publications />}></Route>
 						<Route path="/contact" element={<Contact />}></Route>
 						<Route path="/news" element={<News />}></Route>
-
 					</Routes>
 				</Box>
 			</CloudedSection>

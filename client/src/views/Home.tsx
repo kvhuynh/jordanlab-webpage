@@ -287,7 +287,7 @@ export const Home: React.FC = () => {
           transition={{ duration: 0.5 }}
           style={{ position: "fixed", width: "100%", zIndex: 10 }}
         >
-          <Nav />
+          <Nav show={false} />
         </motion.div>
       )}
 

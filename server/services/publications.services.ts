@@ -12,6 +12,8 @@ type Publication = {
 };
 
 export const getAllPublications = async (orcidId: string) => {
+	console.log("getting publications");
+	
 	const URL = `https://pub.orcid.org/v3/${orcidId}/works`;
 
 	const res = await axios.get(URL, {
