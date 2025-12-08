@@ -13,11 +13,11 @@ export const ImageCloud: React.FC = () => {
 		id: i,
 		x: `${random(0, 100)}%`,
 		y: `${random(0, 100)}%`,
-		size: `${random(20, 70)}px`,
+		size: `${random(20, 40)}px`,
 		floatX: random(5, 20),
 		floatY: random(5, 20),
 		duration: random(5, 8),
-		rotate: `${random(0, 130)}deg`,
+		rotate: `${random(0, 70)}deg`,
 	}));
 
 	return (
