@@ -228,7 +228,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import Nav from "../components/Nav";
-import HeaderCloud from "../components/HeaderCloud";
+// import HeaderCloud from "../components/HeaderCloud";
 import lmpLogo from "../assets/uw-lab-medicine-pathology-inverted.svg";
 import microLogo from "../assets/uw-dept-logo-department-of-microbiology/uw-dept-logo-department-of-microbiology-horizontal-inverted.svg";
 import logo from "../assets/logo3x.png";
