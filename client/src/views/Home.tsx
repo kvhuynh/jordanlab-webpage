@@ -1,5 +1,4 @@
 import { Box, Flex, Text, Link, Image } from "@chakra-ui/react";
-import { Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 
 import HeaderCloud from "../components/HeaderCloud";
@@ -76,7 +75,6 @@ export const Home: React.FC = () => {
 
 			{/* SECTION 1 */}
 			<FadeInSection>
-				<Parallax speed={-20}>
 					<Flex
 						direction="column"
 						align="center"
@@ -104,12 +102,10 @@ export const Home: React.FC = () => {
 							lineages.
 						</Text>
 					</Flex>
-				</Parallax>
 			</FadeInSection>
 
 			{/* SECTION 2 */}
 			<FadeInSection>
-				<Parallax speed={-20}>
 					<Flex
 						direction="column"
 						align="center"
@@ -171,12 +167,10 @@ export const Home: React.FC = () => {
 							))}
 						</Flex>
 					</Flex>
-				</Parallax>
 			</FadeInSection>
 
 			{/* SECTION 3 */}
 			<FadeInSection>
-				<Parallax speed={-20}>
 					<Flex
 						direction="column"
 						align="center"
@@ -201,7 +195,6 @@ export const Home: React.FC = () => {
 							</Link>
 						</Flex>
 					</Flex>
-				</Parallax>
 			</FadeInSection>
 		</Box>
 	);

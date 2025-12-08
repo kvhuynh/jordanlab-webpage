@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import CloudedSection from "./components/CloudedSection";
 
 function App() {
+	
 	return (
 		<>
 			<Nav></Nav>
