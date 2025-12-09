@@ -1,4 +1,4 @@
-import { Box, Flex, List, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { FadeInSection } from "../components/FadeInSection";
 
 export const Research: React.FC = () => {
