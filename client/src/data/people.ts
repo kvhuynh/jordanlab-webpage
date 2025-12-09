@@ -84,7 +84,7 @@ export const people: Record<
             email: "kvhuynh@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description: "goat",
+			description: "undisputed goat",
 			links: [{ label: "Google Scholar", href: "#" }],
 		},
 	],
