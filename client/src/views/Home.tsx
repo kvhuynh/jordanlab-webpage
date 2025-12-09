@@ -103,7 +103,7 @@ export const Home: React.FC = () => {
 				>
 					<HeaderCloud startAnimation={startCloud}></HeaderCloud>
 					<Text fontSize="5xl" textAlign="center">
-						Studying Eukaryotic Innate Immunity
+						Exploring Eukaryotic Innate Immunity
 					</Text>
 				</motion.div>
 
@@ -118,10 +118,13 @@ export const Home: React.FC = () => {
 						maxW="120ch"
 						mt={4}
 					>
-						We utilize discovery-driven techniques to ask and answer questions
+						{/* We utilize discovery-driven techniques to ask and answer questions
 						about virus-host interactions across eukaryotes in order to
 						understand the regulation of and expand our understanding of
-						eukaryotic antiviral responses.
+						eukaryotic antiviral responses */}
+						We utilize discovery-driven techniques to study virus-host
+						interactions across eukaryotes to expand our understanding on how
+						cells detect and respond to infections.
 					</Text>
 				</motion.div>
 			</Flex>
@@ -136,17 +139,17 @@ export const Home: React.FC = () => {
 					color="var(--text)"
 				>
 					<Text fontSize="3xl" fontWeight="bold">
-						Our Research
+						Our Focus: Host-Virus Interactions
 					</Text>
 					<Text fontSize="2xl" maxW="120ch" px={6}>
-						Viruses infect a wide range of organisms, from protists, algae, and
-						fungi to plants and animals, relying on host cellular machinery for
-						replication and spread. As hosts evolve defense pathways to restrict
-						infection, viruses concurrently develop countermeasures that
-						suppress or evade these defenses. This ongoing co-evolution drives a
-						continual host–virus arms race. Our lab investigates the
-						identification, regulation, evolution, and antagonism of antiviral
-						systems across diverse eukaryotic lineages.
+						Viruses are known to parasitize all walks of life, exploiting the host machinery for replication and
+						propagation. While the host evolves defense mechanisms to resist
+						such infection, viruses counter- evolve various strategies to negate
+						the host’s defense system. Such co-evolution leads to a perpetual
+						host-virus arms race where each organism must innovate constantly to
+						stay alive. Our lab focuses on the identification, regulation,
+						evolution and antagonism of the antiviral systems in diverse
+						eukaryotes.
 					</Text>
 				</Flex>
 			</FadeInSection>

@@ -4,19 +4,18 @@ import { FadeInSection } from "../components/FadeInSection";
 export const Research: React.FC = () => {
 	const sections = [
 		{
-			title: "Transcriptional Regulation of the Antiviral Interferon Response",
-			text: `Our research focuses on understanding how the antiviral interferon
-      response is kept off. Research over the last decade has clearly
-      shown that the cell generates all the inflammatory molecules that
-      activate the nucleic acid sensors, which activate the interferon
-      system. Unregulated, this leads to pathological innate immune
-      activation, which can present as autoimmune and neuro-developmental
-      disorders. Thus, cells elaborate a sophisticated regulatory network
-      to limit the production of these intermediates, metabolize those
-      that are made, and physically locate the sensors away from the major
-      sites of inflammatory intermediate production. We have a specific
-      focus on understanding how the cell limits the production of
-      inflammatory RNAs generated during transcription.`,
+			title: "Basal regulation of antiviral systems",
+			text: `Chronic activation of antiviral systems often come at a significant fitness cost to the host and so
+		must be tightly regulated to mitigate this. In vertebrates, the major antiviral system is controlled by
+		the Type I and III families of Interferon cytokines; the chronic activation of which is associated
+		with autoimmune and neuro-developmental disorders. With a focus on processes that controlled
+		the production of dsRNA molecules that could activate the IFN system, we developed an arrayed
+		CRISPR/Cas9 library targeting ~1600 human genes, which identified 20 genes whose absence led
+		to the robust activation of the IFN response. How these proteins limit activation of the IFN
+		response is an active area of research in the lab. Additionally, several of these are deeply conserved
+		across Eukarya, begging the question whether the capacity to limit aberrant activation of antiviral
+		systems is an ancient function of these proteins or if this function is a specific innovation of IFN-
+		containing lineages.`,
 		},
 		{
 			title: "Amoebal Antiviral Responses and Giant Virus Countermeasures",
@@ -55,10 +54,40 @@ export const Research: React.FC = () => {
 
 	return (
 		<Flex flexDirection="column" paddingTop={75}>
-			<Text textStyle="6xl" alignSelf="flex-start" marginBottom="30px">
+			<Text textStyle="6xl" alignSelf="flex-start" marginBottom="0">
 				Research
 			</Text>
 			<Box position="relative" minHeight="100vh" overflow="hidden">
+				<FadeInSection>
+					<Flex
+						position="relative"
+						zIndex={1}
+						direction="column"
+						align="center"
+						justify="center"
+						minHeight="75vh"
+						color="var(--text)"
+					>
+						<Text textStyle="5xl" marginBottom={6}>
+							Our Research
+						</Text>
+						<Text px={{ base: 4, md: 8 }} textStyle="xl" maxW="120ch" mx="auto">
+							We combine standard molecular biological techniques,
+							high-throughput screening, field sampling, Next-generation
+							sequencing (NGS), high-performance computing, and evolutionary
+							analysis by correlation and coevolution to address our research
+							interests. As the study of antiviral systems has important
+							translational applications, and the discovery of several major
+							antiviral systems has led to watersheds in either biotechnology or
+							medicine, we are also interested in pursuing the translatable
+							aspects of promising discoveries, although our major focus is on
+							the basic biology that underlies these processes. Our research
+							interest has been categorized into three domains:
+						</Text>
+					</Flex>
+				</FadeInSection>
+			</Box>
+			{/* <Box position="relative" minHeight="100vh" overflow="hidden">
 				<FadeInSection>
 					<Flex
 						position="relative"
@@ -91,7 +120,7 @@ export const Research: React.FC = () => {
 						</Text>
 					</Flex>
 				</FadeInSection>
-			</Box>
+			</Box> */}
 
 			{sections.map((section, i) => (
 				<Box key={i} position="relative" minHeight="100vh" overflow="hidden">
@@ -109,7 +138,12 @@ export const Research: React.FC = () => {
 								{section.title}
 							</Text>
 
-							<Text px={{ base: 4, md: 8 }} textStyle="xl" maxW="120ch" mx="auto">
+							<Text
+								px={{ base: 4, md: 8 }}
+								textStyle="xl"
+								maxW="120ch"
+								mx="auto"
+							>
 								{section.text}
 							</Text>
 						</Flex>
