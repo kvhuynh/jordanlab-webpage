@@ -83,7 +83,7 @@ export const Home: React.FC = () => {
 			>
 				{/* Logo splash */}
 				<motion.div
-					initial={{ opacity: 0, y: -220 }}
+					initial={{ opacity: 0, y: -150 }}
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ delay: 4, duration: 1.2, ease: "easeInOut" }}
 					style={{ position: "absolute" }}
@@ -113,31 +113,26 @@ export const Home: React.FC = () => {
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ delay: 4, duration: 1, ease: "linear" }}
 				>
-					<HeaderCloud startAnimation={startCloud}></HeaderCloud>
-					<Text fontSize="5xl" textAlign="center">
+					<Text
+						textStyle={["3xl", "5xl"]}
+						textAlign="center"
+						maxW="120ch"
+						mt={4}
+					>
 						Exploring Eukaryotic Innate Immunity
 					</Text>
-				</motion.div>
-
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ delay: 4, duration: 1, ease: "linear" }}
-				>
 					<Text
 						textStyle={["xl", "2xl"]}
 						textAlign="center"
 						maxW="120ch"
 						mt={4}
 					>
-						{/* We utilize discovery-driven techniques to ask and answer questions
-						about virus-host interactions across eukaryotes in order to
-						understand the regulation of and expand our understanding of
-						eukaryotic antiviral responses */}
 						We utilize discovery-driven techniques to study virus-host
 						interactions across eukaryotes to expand our understanding on how
 						cells detect and respond to infections.
 					</Text>
+				<HeaderCloud startAnimation={startCloud}></HeaderCloud>
+
 				</motion.div>
 			</Flex>
 
@@ -150,10 +145,10 @@ export const Home: React.FC = () => {
 					minHeight="100vh"
 					color="var(--text)"
 				>
-					<Text fontSize="3xl" fontWeight="bold">
+					<Text textStyle={"3xl"} fontWeight="bold">
 						The Host-Virus Arms Race
 					</Text>
-					<Text fontSize="2xl" maxW="120ch" px={6}>
+					<Text textStyle={["xl", "2xl"]} maxW="120ch" px={6}>
 						Viruses are known to parasitize all walks of life, exploiting the
 						host machinery for replication and propagation. While the host
 						evolves defense mechanisms to resist such infection, viruses
