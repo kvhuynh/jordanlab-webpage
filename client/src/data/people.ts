@@ -23,23 +23,12 @@ export const people: Record<
 			links: [{ label: "Google Scholar", href: "#" }],
 		},
 	],
-	postdocs: [
-		{
-			name: "Avi Shukla",
-			role: "Postdoctoral Researcher",
-			email: "ashukl3@uw.edu",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
-		},
-	],
+	postdocs: [],
 	grad: [
 		{
 			name: "Freya van't veer",
 			role: "3rd year graduate student",
-            email: "freyav@uw.edu",
+			email: "freyav@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
@@ -49,7 +38,7 @@ export const people: Record<
 		{
 			name: "Maria McCavitt-Malvido",
 			role: "2nd year graduate student",
-            email: "mfmm@uw.edu",
+			email: "mfmm@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
@@ -59,7 +48,7 @@ export const people: Record<
 		{
 			name: "Hunter Toyoda",
 			role: "2nd year graduate student",
-            email:"htoyoda@uw.edu",
+			email: "htoyoda@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
@@ -69,9 +58,19 @@ export const people: Record<
 	],
 	staff: [
 		{
+			name: "Avi Shukla",
+			role: "Staff Scientist",
+			email: "ashukl3@uw.edu",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Google Scholar", href: "#" }],
+		},
+		{
 			name: "Bernie Sentigar",
 			role: "Lab Manager/Research Scientist",
-            email: "bsenti@uw.edu",
+			email: "bsenti@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
@@ -81,7 +80,7 @@ export const people: Record<
 		{
 			name: "Kevin Huynh",
 			role: "Research Scientist",
-            email: "kvhuynh@uw.edu",
+			email: "kvhuynh@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description: "undisputed goat",
@@ -92,7 +91,7 @@ export const people: Record<
 		{
 			name: "Brandon Duong",
 			role: "Undergraduate",
-            email: "bduong03@uw.edu",
+			email: "bduong03@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
@@ -102,7 +101,7 @@ export const people: Record<
 		{
 			name: "Anna Valpiani",
 			role: "Undergraduate",
-            email: "annav10@uw.edu",
+			email: "annav10@uw.edu",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
