@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Separator, Text } from "@chakra-ui/react";
 import { FadeInSection } from "../components/FadeInSection";
 
 export const Research: React.FC = () => {
@@ -16,6 +16,8 @@ export const Research: React.FC = () => {
 		across Eukarya, begging the question whether the capacity to limit aberrant activation of antiviral
 		systems is an ancient function of these proteins or if this function is a specific innovation of IFN-
 		containing lineages.`,
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 		},
 		{
 			title: "Amoebal Antiviral Responses and Giant Virus Countermeasures",
@@ -35,6 +37,8 @@ export const Research: React.FC = () => {
       and therapeutics. Moreover, these viruses remain enigmatic, and by
       studying them in response to their hosts, we will learn incredible
       new basic virology.`,
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 		},
 		{
 			title: "Environmental Sampling and Discovery of Novel Giant Viruses",
@@ -49,14 +53,18 @@ export const Research: React.FC = () => {
       samples to find some typical or novel giant viruses. We have developed
       an in-house pipeline to isolate, characterize, and utilize these viruses
       for our anti-viral research goals.`,
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 		},
 	];
 
 	return (
 		<Flex flexDirection="column" paddingTop={75}>
-			<Text textStyle="6xl" alignSelf="flex-start" marginBottom="0">
+			<Text textStyle="6xl" alignSelf="flex-start" mb={6}>
 				Research
 			</Text>
+			<Separator size="lg" />
+
 			<Box position="relative" minHeight="100vh" overflow="hidden">
 				<FadeInSection>
 					<Flex
@@ -134,13 +142,14 @@ export const Research: React.FC = () => {
 							minHeight="125vh"
 							color="var(--text)"
 						>
-							<Text textStyle="5xl" marginBottom={6}>
+							<Image src={section.image}></Image>
+							<Text textStyle={["4xl", "5xl"]} marginBottom={6}>
 								{section.title}
 							</Text>
 
 							<Text
 								px={{ base: 4, md: 8 }}
-								textStyle="xl"
+								textStyle={["sm", "xl"]}
 								maxW="120ch"
 								mx="auto"
 							>

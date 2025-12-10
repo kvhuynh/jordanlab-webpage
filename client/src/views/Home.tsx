@@ -11,17 +11,17 @@ import HeaderCloud from "../components/HeaderCloud";
 
 const researchProjects = [
 	{
-		title: "place_holder",
+		title: "Basal regulation of antiviral systems",
 		image:
 			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 	},
 	{
-		title: "place_holder",
+		title: "Amoebal Antiviral Responses and Giant Virus Countermeasures",
 		image:
 			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 	},
 	{
-		title: "place_holder",
+		title: "Environmental Sampling and Discovery of Novel Giant Viruses",
 		image:
 			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 	},
@@ -83,6 +83,18 @@ export const Home: React.FC = () => {
 			>
 				{/* Logo splash */}
 				<motion.div
+					initial={{ opacity: 0, y: -220 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ delay: 4, duration: 1.2, ease: "easeInOut" }}
+					style={{ position: "absolute" }}
+				>
+					<Image
+						src={logo}
+						w={["600px", "600px", "800px"]}
+						objectFit="contain"
+					/>
+				</motion.div>
+				<motion.div
 					initial={{ opacity: 1, scale: 1 }}
 					animate={{ opacity: 0, scale: 1.2 }}
 					transition={{ duration: 4, ease: "easeInOut" }}
@@ -139,17 +151,17 @@ export const Home: React.FC = () => {
 					color="var(--text)"
 				>
 					<Text fontSize="3xl" fontWeight="bold">
-						Our Focus: Host-Virus Interactions
+						The Host-Virus Arms Race
 					</Text>
 					<Text fontSize="2xl" maxW="120ch" px={6}>
-						Viruses are known to parasitize all walks of life, exploiting the host machinery for replication and
-						propagation. While the host evolves defense mechanisms to resist
-						such infection, viruses counter- evolve various strategies to negate
-						the host’s defense system. Such co-evolution leads to a perpetual
-						host-virus arms race where each organism must innovate constantly to
-						stay alive. Our lab focuses on the identification, regulation,
-						evolution and antagonism of the antiviral systems in diverse
-						eukaryotes.
+						Viruses are known to parasitize all walks of life, exploiting the
+						host machinery for replication and propagation. While the host
+						evolves defense mechanisms to resist such infection, viruses
+						counter- evolve various strategies to negate the host’s defense
+						system. Such co-evolution leads to a perpetual host-virus arms race
+						where each organism must innovate constantly to stay alive. Our lab
+						focuses on the identification, regulation, evolution and antagonism
+						of the antiviral systems in diverse eukaryotes.
 					</Text>
 				</Flex>
 			</FadeInSection>
@@ -227,7 +239,7 @@ export const Home: React.FC = () => {
 					color="var(--text)"
 				>
 					<Text fontSize="4xl" fontWeight="bold">
-						Affiliations
+						Affiliations I CANT FIND THESE LOGOS ANYMORE WTF
 					</Text>
 					<Flex direction="row" align="center" justify="center">
 						<Link href="https://dlmp.uw.edu/" target="_blank">

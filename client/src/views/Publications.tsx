@@ -4,6 +4,7 @@ import {
 	Link,
 	Text,
 	Spinner,
+	Separator,
 } from "@chakra-ui/react";
 
 type Author = {
@@ -69,9 +70,10 @@ export const Publications: React.FC = () => {
 
 	return (
 		<Flex flexDirection={"column"} paddingTop={75}>
-			<Text textStyle={"6xl"} alignSelf={"flex-start"} marginBottom={"30px"}>
+			<Text textStyle={"6xl"} alignSelf={"flex-start"} mb={6}>
 				Publications
 			</Text>
+			<Separator size="lg" />
 
 			<Box>
 				{Object.keys(grouped)
