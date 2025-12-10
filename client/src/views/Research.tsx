@@ -1,5 +1,15 @@
-import { Box, Flex, Image, Separator, Text } from "@chakra-ui/react";
+import {
+	Box,
+	Carousel,
+	Flex,
+	IconButton,
+	Image,
+	Separator,
+	Text,
+} from "@chakra-ui/react";
 import { FadeInSection } from "../components/FadeInSection";
+import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+// import amoebaVideo from "../assets/amoeba_timelapse.mp4";
 
 export const Research: React.FC = () => {
 	const sections = [
@@ -76,6 +86,17 @@ export const Research: React.FC = () => {
 						minHeight="75vh"
 						color="var(--text)"
 					>
+						{/* <Box maxW="800px" w="100%">
+							<Box
+								as="video"
+								src={amoebaVideo}
+								controls
+								autoPlay={false}
+								borderRadius="lg"
+								boxShadow="lg"
+								w="100%"
+							/>
+						</Box> */}
 						<Text textStyle="5xl" marginBottom={6}>
 							Our Research
 						</Text>
@@ -142,7 +163,43 @@ export const Research: React.FC = () => {
 							minHeight="125vh"
 							color="var(--text)"
 						>
-							<Image src={section.image}></Image>
+							<Carousel.Root
+								slideCount={sections.length}
+								width="100%"
+								maxW="600px"
+								mx="auto"
+							>
+								<Carousel.ItemGroup>
+									{sections.map((section, i) => (
+										<Carousel.Item key={i} index={i}>
+											<Flex w="100%" justify="center" align="center">
+												<Image
+													src={section.image}
+													maxH="400px"
+													objectFit="contain"
+												/>
+											</Flex>
+										</Carousel.Item>
+									))}
+								</Carousel.ItemGroup>
+
+								<Carousel.Control justifyContent="center" gap="4">
+									<Carousel.PrevTrigger asChild>
+										<IconButton size="xs" variant="ghost">
+											<LuChevronLeft />
+										</IconButton>
+									</Carousel.PrevTrigger>
+
+									<Carousel.Indicators />
+
+									<Carousel.NextTrigger asChild>
+										<IconButton size="xs" variant="ghost">
+											<LuChevronRight />
+										</IconButton>
+									</Carousel.NextTrigger>
+								</Carousel.Control>
+							</Carousel.Root>
+
 							<Text textStyle={["4xl", "5xl"]} marginBottom={6}>
 								{section.title}
 							</Text>
