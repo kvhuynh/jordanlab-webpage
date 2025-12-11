@@ -9,11 +9,27 @@ import {
 } from "@chakra-ui/react";
 import { FadeInSection } from "../components/FadeInSection";
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 // import amoebaVideo from "../assets/amoeba_timelapse.mp4";
 
 export const Research: React.FC = () => {
+	const { hash } = useLocation();
+
+	useEffect(() => {
+		if (hash) {
+			const el = document.querySelector(hash);
+			if (el) {
+				setTimeout(() => {
+					el.scrollIntoView({ behavior: "smooth" });
+				}, 100); // allow page to finish layout
+			}
+		}
+	}, [hash]);
+
 	const sections = [
 		{
+			token: "1",
 			title: "Basal regulation of antiviral systems",
 			text: `Chronic activation of antiviral systems often come at a significant fitness cost to the host and so
 		must be tightly regulated to mitigate this. In vertebrates, the major antiviral system is controlled by
@@ -152,7 +168,13 @@ export const Research: React.FC = () => {
 			</Box> */}
 
 			{sections.map((section, i) => (
-				<Box key={i} position="relative" minHeight="100vh" overflow="hidden">
+				<Box
+					// id={`section-${i}`}
+					key={i}
+					position="relative"
+					minHeight="100vh"
+					overflow="hidden"
+				>
 					<FadeInSection>
 						<Flex
 							position="relative"
@@ -174,6 +196,7 @@ export const Research: React.FC = () => {
 										<Carousel.Item key={i} index={i}>
 											<Flex w="100%" justify="center" align="center">
 												<Image
+													id={`section-${i}`}
 													src={section.image}
 													maxH="400px"
 													objectFit="contain"

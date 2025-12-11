@@ -11,6 +11,7 @@ import HeaderCloud from "../components/HeaderCloud";
 
 const researchProjects = [
 	{
+		token: "1",
 		title: "Basal regulation of antiviral systems",
 		image:
 			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
@@ -131,8 +132,7 @@ export const Home: React.FC = () => {
 						interactions across eukaryotes to expand our understanding on how
 						cells detect and respond to infections.
 					</Text>
-				<HeaderCloud startAnimation={startCloud}></HeaderCloud>
-
+					<HeaderCloud startAnimation={startCloud}></HeaderCloud>
 				</motion.div>
 			</Flex>
 
@@ -181,43 +181,45 @@ export const Home: React.FC = () => {
 						maxW="1200px"
 						px={4}
 					>
-						{researchProjects.map((project) => (
+						{researchProjects.map((project, i) => (
 							<motion.div
 								key={project.title}
 								whileHover={{ scale: 1.05 }}
 								transition={{ type: "spring", stiffness: 200, damping: 15 }}
 							>
-								<Box
-									w={["140px", "180px", "220px"]}
-									h={["140px", "180px", "220px"]}
-									borderRadius="lg"
-									overflow="hidden"
-									boxShadow="md"
-									bg="var(--card-bg)"
-									position="relative"
-									cursor="pointer"
-								>
-									<Image
-										src={project.image}
-										alt={project.title}
-										w="100%"
-										h="100%"
-										objectFit="cover"
-									/>
+								<Link href={`/research#section-${i}`}>
 									<Box
-										position="absolute"
-										bottom={0}
-										w="100%"
-										bg="rgba(0,0,0,0.55)"
-										color="white"
-										p={2}
-										fontWeight="semibold"
-										fontSize="sm"
-										textAlign="center"
+										w={["140px", "180px", "220px"]}
+										h={["140px", "180px", "220px"]}
+										borderRadius="lg"
+										overflow="hidden"
+										boxShadow="md"
+										bg="var(--card-bg)"
+										position="relative"
+										cursor="pointer"
 									>
-										{project.title}
+										<Image
+											src={project.image}
+											alt={project.title}
+											w="100%"
+											h="100%"
+											objectFit="cover"
+										/>
+										<Box
+											position="absolute"
+											bottom={0}
+											w="100%"
+											bg="rgba(0,0,0,0.55)"
+											color="white"
+											p={2}
+											fontWeight="semibold"
+											fontSize="sm"
+											textAlign="center"
+										>
+											{project.title}
+										</Box>
 									</Box>
-								</Box>
+								</Link>
 							</motion.div>
 						))}
 					</Flex>
