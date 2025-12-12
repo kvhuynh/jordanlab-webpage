@@ -44,6 +44,8 @@ export const Research: React.FC = () => {
 		containing lineages.`,
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			caption:
+				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
 		{
 			title: "Amoebal Antiviral Responses and Giant Virus Countermeasures",
@@ -65,6 +67,8 @@ export const Research: React.FC = () => {
       new basic virology.`,
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			caption:
+				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
 		{
 			title: "Environmental Sampling and Discovery of Novel Giant Viruses",
@@ -81,6 +85,8 @@ export const Research: React.FC = () => {
       for our anti-viral research goals.`,
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			caption:
+				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
 	];
 
@@ -168,13 +174,7 @@ export const Research: React.FC = () => {
 			</Box> */}
 
 			{sections.map((section, i) => (
-				<Box
-					// id={`section-${i}`}
-					key={i}
-					position="relative"
-					minHeight="100vh"
-					overflow="hidden"
-				>
+				<Box key={i} position="relative" minHeight="100vh" overflow="hidden">
 					<FadeInSection>
 						<Flex
 							position="relative"
@@ -190,17 +190,38 @@ export const Research: React.FC = () => {
 								width="100%"
 								maxW="600px"
 								mx="auto"
+								autoplay={true}
+								loop
 							>
 								<Carousel.ItemGroup>
 									{sections.map((section, i) => (
 										<Carousel.Item key={i} index={i}>
-											<Flex w="100%" justify="center" align="center">
+											<Flex
+												direction="column"
+												align="center"
+												justify="center"
+												w="100%"
+											>
+												{/* Image */}
 												<Image
 													id={`section-${i}`}
 													src={section.image}
 													maxH="400px"
 													objectFit="contain"
 												/>
+
+												{/* Caption below image */}
+												{section.caption && (
+													<Text
+														mt={2} // spacing between image and caption
+														fontSize="sm"
+														color="var(--text)"
+														textAlign="center"
+														maxW="100%"
+													>
+														{section.caption}
+													</Text>
+												)}
 											</Flex>
 										</Carousel.Item>
 									))}
