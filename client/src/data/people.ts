@@ -1,3 +1,5 @@
+
+
 export type Person = {
 	name: string;
 	role: string;
@@ -72,7 +74,7 @@ export const people: Record<
 			role: "Lab Manager/Research Scientist",
 			email: "bsenti@uw.edu",
 			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+				"./images/people/bernie/bernie-casual.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Google Scholar", href: "#" }],
