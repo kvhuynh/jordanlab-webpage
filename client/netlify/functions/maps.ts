@@ -4,7 +4,6 @@ import type { Handler } from "@netlify/functions";
 // Example: returning a Google Maps embed URL based on an address
 export const handler: Handler = async (event) => {
 	const apiKey = process.env.GOOGLE_MAPS_API_KEY;
-	console.log(apiKey);
 	
 	if (!apiKey) {
 		return {
