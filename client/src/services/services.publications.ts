@@ -27,6 +27,8 @@
 // };
 export async function getPublications(orcid: string) {
   const res = await fetch(`/.netlify/functions/publications?orcid=${orcid}`);
+  console.log(res);
+  
 
   if (!res.ok) {
     throw new Error("Failed to fetch publications");

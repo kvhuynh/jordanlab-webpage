@@ -8,9 +8,10 @@
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "Bundler",
+		"types": ["node"], // ← add this
 		"skipLibCheck": true,
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*, netlify/functions"]
 		}
 	}
 }
