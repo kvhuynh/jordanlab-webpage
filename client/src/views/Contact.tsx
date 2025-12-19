@@ -6,7 +6,7 @@ export const Contact: React.FC = () => {
 
 	useEffect(() => {
 		getMaps().then((res) => {
-			setEmbedUrl(res.url);
+			setEmbedUrl(res.embedUrl);
 		});
 	});
 
