@@ -92,3 +92,4 @@ const _getAuthors = async (publications: Publication[]): Promise<Publication[]> 
 module.exports = {
 	getAllPublications,
 };
+	
