@@ -56,7 +56,7 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 								{p.image && (
 									<Box>
 										<Image
-											height="150px"
+											height="300px"
 											objectFit="cover"
 											src={p.image}
 											alt={p.name}

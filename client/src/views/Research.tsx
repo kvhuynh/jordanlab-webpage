@@ -30,59 +30,41 @@ export const Research: React.FC = () => {
 	const sections = [
 		{
 			token: "1",
-			title: "Basal regulation of antiviral systems",
-			text: `Chronic activation of antiviral systems often come at a significant fitness cost to the host and so
-		must be tightly regulated to mitigate this. In vertebrates, the major antiviral system is controlled by
-		the Type I and III families of Interferon cytokines; the chronic activation of which is associated
-		with autoimmune and neuro-developmental disorders. With a focus on processes that controlled
-		the production of dsRNA molecules that could activate the IFN system, we developed an arrayed
-		CRISPR/Cas9 library targeting ~1600 human genes, which identified 20 genes whose absence led
-		to the robust activation of the IFN response. How these proteins limit activation of the IFN
-		response is an active area of research in the lab. Additionally, several of these are deeply conserved
-		across Eukarya, begging the question whether the capacity to limit aberrant activation of antiviral
-		systems is an ancient function of these proteins or if this function is a specific innovation of IFN-
-		containing lineages.`,
+			title: "Transcriptional regulation of the antiviral state",
+			text: `Interferons and the genes they regulate constitute the major antiviral program in humans and other
+		vertebrates. Our lab focuses on the mechanism(s) by which transcription factors control the
+		interferon response – keeping the response off at baseline, modulating the magnitude of an
+		activated response, and cessation of the interferon response – and how this differs across tissue
+		types. We are also interested in understanding how distinct families of transcription factors
+		contribute to broad antiviral states that are independent of the interferons.`,
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			caption:
 				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
 		{
-			title: "Amoebal Antiviral Responses and Giant Virus Countermeasures",
-			text: `Despite comprehensive insights into viral detection and defense
-      mechanisms in higher eukaryotes, our understanding of how lower
-      eukaryotes, including protists, mount their defenses remains
-      minimal. Lineages of these eukaryotes (specifically algae and
-      amoebae) are known to be the melting pot for chimeric microorganisms
-      belonging to the class Megaviricetes, commonly known as giant
-      viruses, whose genomes range from 350kb to 2.5 Mb. Since these
-      unicellular eukaryotes are devoid of any known anti-viral system
-      (Restriction Endonucleases, CRISPR/Cas systems, and RNA
-      interference) or any such homologs related to higher multicellular
-      eukaryotes, there is a high probability of finding novel strategies
-      and different mechanisms to counter virus infection. That could be a
-      revolutionary step in the field of molecular biology, biotechnology,
-      and therapeutics. Moreover, these viruses remain enigmatic, and by
-      studying them in response to their hosts, we will learn incredible
-      new basic virology.`,
+			title: "Antiviral defense in microbial eukaryotes",
+			text: `Microbial eukaryotes are essential parts of the nutrient cycle in both marine and soil environments.
+		These eukaryotes are host to multiple clades of giant viruses (viruses whose genomes range from
+		~300kb to 2.5Mb) whose evolutionary origins remain a mystery. Despite the ecological
+		importance of these hosts and the prevalence of their viruses, little is known about how these hosts
+		defend themselves against viral pathogens. Homology analyses by our lab and others have been
+		unable to detect many modules of innate immunity conserved in prokaryotes and higher eukaryotes
+		in these eukaryotes. This suggests significant potential for brand new paradigms of viral detection
+		and defense.`,
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			caption:
 				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
 		{
-			title: "Environmental Sampling and Discovery of Novel Giant Viruses",
-			text: `The discovery of Mimivirus (in 2003) has fueled debate about the
-      significance of viruses in the tree of life and their role in
-      eukaryogenesis. Since then, there have been tremendous discoveries
-      of such giant viruses that now belong to the phylum Nuclecytoviricota,
-      sharing the clades with the well-known Pox-, Irido-, and Asfar–viridae.
-      Although we managed to share some of these viruses from the established lab,
-      the lack of a common repository makes most of them quite inaccessible
-      to budding labs, which drives us to start exploring the environmental
-      samples to find some typical or novel giant viruses. We have developed
-      an in-house pipeline to isolate, characterize, and utilize these viruses
-      for our anti-viral research goals.`,
+			title: "Viral evasion of antiviral innate immunity",
+			text: `To successfully replicate their genomes and spread their progeny viruses must evade detection and
+		subvert the activation of host antiviral programs. Using both viruses of humans and microbial
+		eukaryotes, our lab focuses on the molecular strategies these viruses to undermine host immunity.
+		How these strategies have evolved across viral lineages, their functionality against diverse antiviral
+		systems, and their ability to reveal unknown mechanisms of host restriction are our major areas of
+		research.`,
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			caption:
