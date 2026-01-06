@@ -36,20 +36,26 @@
   color-scheme: dark;
 }
 
+/* Hide dark logos by default */
+.logo.dark-logo {
+  display: none;
+}
+
+/* Hide light logos and show dark logos when .dark is active */
+:root.dark .logo.light-logo {
+  display: none;
+}
+
+:root.dark .logo.dark-logo {
+  display: inline-block; /* or block if you prefer */
+}
+
+
 body {
   background: var(--bg);
   color: var(--text);
   margin: 0;
 }
-
-/* a {
-  font-weight: 500;
-  color: "white";
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
 
 a {
   font-weight: 500;
@@ -62,12 +68,10 @@ a:hover {
   color: #EA8185;
 }
 
-/* Add this block after the above */
 a:focus,
 a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-  /* transition: outline 0.25s ease; */
 }
 
 
@@ -95,23 +99,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #ff74c0;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-  a {
-  transition: color 0.25s ease, outline 0.25s ease;
-}
-  
-} */
 
 
 

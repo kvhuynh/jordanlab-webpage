@@ -2,10 +2,16 @@ import { Box, Flex, Text, Link, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
+import { useColorMode } from "../components/ui/color-mode";
+
 import Nav from "../components/Nav";
-import lmpLogo from "../assets/uw-lab-medicine-pathology-inverted.svg";
-import microLogo from "../assets/uw-dept-logo-department-of-microbiology/uw-dept-logo-department-of-microbiology-horizontal-inverted.svg";
+
+import dlmpLight from "../assets/dlmp-light.png";
+import dlmpDark from "../assets/dlmp-dark.svg";
+import microLight from "../assets/micro-light.png";
+import microDark from "../assets/micro-dark.png";
 import logo from "../assets/logo3x.png";
+import dlmpLogo from "../assets/LaboratoryMedicinePathology_Vert_FullColor_RGB.png";
 import { FadeInSection } from "../components/FadeInSection";
 import HeaderCloud from "../components/HeaderCloud";
 
@@ -45,6 +51,7 @@ const researchProjects = [
 
 export const Home: React.FC = () => {
 	const [showNav, setShowNav] = useState(false);
+	const { colorMode } = useColorMode();
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -236,20 +243,75 @@ export const Home: React.FC = () => {
 					color="var(--text)"
 				>
 					<Text fontSize="4xl" fontWeight="bold">
-						Affiliations I CANT FIND THESE LOGOS ANYMORE WTF
+						Affiliations
 					</Text>
-					<Flex direction="row" align="center" justify="center">
-						<Link href="https://dlmp.uw.edu/" target="_blank">
-							<Image src={lmpLogo} height="100px" />
-						</Link>
+<Flex
+  direction="row"
+  align="center"
+  justify="center"
+  gap={[6, 8, 12]} // more spacing as logos get bigger
+  flexWrap="wrap"
+>
+  {/* DLMP Logo */}
+  <Link href="https://dlmp.uw.edu/" target="_blank">
+    <Box
+      w={["200px", "280px", "360px"]}  // mobile -> tablet -> desktop
+      h={["100px", "140px", "180px"]}
+      position="relative"
+    >
+      <img
+        src={dlmpLight}
+        className="logo light-logo"
+        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+      />
+      <img
+        src={dlmpDark}
+        className="logo dark-logo"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",
+          position: "absolute",
+          top: 0,
+          left: 0,
+        }}
+      />
+    </Box>
+  </Link>
 
-						<Link
-							href="https://microbiology.washington.edu/uw-microbiology-home"
-							target="_blank"
-						>
-							<Image src={microLogo} height="60px" />
-						</Link>
-					</Flex>
+  {/* Microbiology Logo */}
+  <Link
+    href="https://microbiology.washington.edu/uw-microbiology-home"
+    target="_blank"
+  >
+    <Box
+      w={["200px", "280px", "360px"]}
+      h={["100px", "140px", "180px"]}
+      position="relative"
+    >
+      <img
+        src={microLight}
+        className="logo light-logo"
+        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+      />
+      <img
+        src={microDark}
+        className="logo dark-logo"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",
+          position: "absolute",
+          top: 0,
+          left: 0,
+        }}
+      />
+    </Box>
+  </Link>
+
+  {/* Add more logos the same way */}
+</Flex>
+
 				</Flex>
 			</FadeInSection>
 		</Box>

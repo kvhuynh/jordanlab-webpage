@@ -32,7 +32,7 @@ export const people: Record<
 			role: "3rd year graduate student",
 			email: "freyav@uw.edu",
 			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+				"./images/people/freya/freya-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Google Scholar", href: "#" }],
@@ -64,7 +64,7 @@ export const people: Record<
 			role: "Staff Scientist",
 			email: "ashukl3@uw.edu",
 			image:
-				"./images/people/avi/avi-tree-cropped.jpg",
+				"./images/people/avi/avi-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Google Scholar", href: "#" }],
@@ -74,7 +74,7 @@ export const people: Record<
 			role: "Lab Manager/Research Scientist",
 			email: "bsenti@uw.edu",
 			image:
-				"./images/people/bernie/bernie-fish.jpg",
+				"./images/people/bernie/bernie-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Google Scholar", href: "#" }],
@@ -84,7 +84,7 @@ export const people: Record<
 			role: "Research Scientist",
 			email: "kvhuynh@uw.edu",
 			image:
-				"./images/people/avi/avi-rice-cropped.jpg",
+				"./images/people/avi/avi-cropped-1x1.jpg",
 			description: "undisputed goat",
 			links: [{ label: "Google Scholar", href: "#" }],
 		},
@@ -95,7 +95,7 @@ export const people: Record<
 			role: "Undergraduate",
 			email: "bduong03@uw.edu",
 			image:
-				"./images/people/brandon/brandon.png",
+				"./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Google Scholar", href: "#" }],

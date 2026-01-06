@@ -54,14 +54,24 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 									)}
 								</Card.Title>
 								{p.image && (
-									<Box>
-										<Image
-											height="300px"
-											objectFit="cover"
-											src={p.image}
-											alt={p.name}
-										/>
-									</Box>
+<Box
+  w="190px"        // width can be fixed or responsive
+  aspectRatio={1 / 1}
+  overflow="hidden"
+  borderRadius="lg"
+  bg="gray.100"
+>
+  <Image
+    src={p.image}
+    alt={p.name}
+    w="100%"
+    h="100%"
+    objectFit="cover"
+  />
+</Box>
+
+
+
 								)}
 							</Flex>
 							{p.description && (
