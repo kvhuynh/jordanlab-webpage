@@ -1,12 +1,10 @@
-
-
 export type Person = {
 	name: string;
 	role: string;
 	email?: string;
 	image?: string;
 	description?: string;
-	links?: { label: string; href: string }[];
+	links?: { label: string; orcId: string }[];
 };
 
 export const people: Record<
@@ -22,7 +20,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 	],
 	postdocs: [],
@@ -35,7 +33,7 @@ export const people: Record<
 				"./images/people/freya/freya-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "" }],
 		},
 		{
 			name: "Maria McCavitt-Malvido",
@@ -45,7 +43,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Hunter Toyoda",
@@ -55,7 +53,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 	],
 	staff: [
@@ -67,7 +65,7 @@ export const people: Record<
 				"./images/people/avi/avi-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Bernie Sentigar",
@@ -77,7 +75,7 @@ export const people: Record<
 				"./images/people/bernie/bernie-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Kevin Huynh",
@@ -85,8 +83,8 @@ export const people: Record<
 			email: "kvhuynh@uw.edu",
 			image:
 				"./images/people/avi/avi-cropped-1x1.jpg",
-			description: "undisputed goat",
-			links: [{ label: "Google Scholar", href: "#" }],
+			description: "undisputed goat - Kevin was born and raised in Washington where he graduated from the University of Washington with a B.S in Molecular, Cellular, and Developmental Biology in 2021. ",
+			links: [{ label: "Publications", orcId: "0009-0000-6920-9935" }],
 		},
 	],
 	undergrad: [
@@ -98,7 +96,7 @@ export const people: Record<
 				"./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Anna Valpiani",
@@ -108,7 +106,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 	],
 	alumni: [
@@ -119,7 +117,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Isabelle Ai",
@@ -128,7 +126,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Isabelle Ai",
@@ -137,7 +135,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Isabelle Ai",
@@ -146,7 +144,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Isabelle Ai",
@@ -155,7 +153,7 @@ export const people: Record<
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Google Scholar", href: "#" }],
+			links: [{ label: "Publications", orcId: "#" }],
 		},
 	],
 };

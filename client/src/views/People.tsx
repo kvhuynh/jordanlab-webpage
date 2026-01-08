@@ -27,8 +27,7 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 				{members.map((p, idx) => (
 					<Card.Root
 						key={idx}
-						// borderWidth="5px"
-						// borderRadius={0}
+
 						borderRadius={"md"}
 						mt={4}
 						maxW="800px" // limit width
@@ -54,24 +53,21 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 									)}
 								</Card.Title>
 								{p.image && (
-<Box
-  w="190px"        // width can be fixed or responsive
-  aspectRatio={1 / 1}
-  overflow="hidden"
-  borderRadius="lg"
-  bg="gray.100"
->
-  <Image
-    src={p.image}
-    alt={p.name}
-    w="100%"
-    h="100%"
-    objectFit="cover"
-  />
-</Box>
-
-
-
+									<Box
+										w="190px" // width can be fixed or responsive
+										aspectRatio={1 / 1}
+										overflow="hidden"
+										borderRadius="lg"
+										bg="gray.100"
+									>
+										<Image
+											src={p.image}
+											alt={p.name}
+											w="100%"
+											h="100%"
+											objectFit="cover"
+										/>
+									</Box>
 								)}
 							</Flex>
 							{p.description && (
@@ -82,7 +78,7 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 							{p.links && (
 								<Card.Footer justifyContent="flex-end" gap={4}>
 									{p.links.map((l, i) => (
-										<Link key={i} href={l.href}>
+										<Link key={i} href={l.orcId}>
 											{l.label}
 										</Link>
 									))}

@@ -1,8 +1,9 @@
-import { Box, Flex, Text, Link, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, Link, Image, Separator } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import Nav from "../components/Nav";
+import { getMaps } from "../services/services.maps";
 
 import dlmpLight from "../assets/dlmp-light.png";
 import dlmpDark from "../assets/dlmp-dark.svg";
@@ -15,32 +16,17 @@ import HeaderCloud from "../components/HeaderCloud";
 const researchProjects = [
 	{
 		token: "1",
-		title: "Basal regulation of antiviral systems",
+		title: "Transcriptional regulation of the antiviral state",
 		image:
 			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 	},
 	{
-		title: "Amoebal Antiviral Responses and Giant Virus Countermeasures",
+		title: "Antiviral defense in microbial eukaryotes",
 		image:
 			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 	},
 	{
-		title: "Environmental Sampling and Discovery of Novel Giant Viruses",
-		image:
-			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-	},
-	{
-		title: "place_holder",
-		image:
-			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-	},
-	{
-		title: "place_holder",
-		image:
-			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-	},
-	{
-		title: "place_holder",
+		title: "Viral evasion of antiviral innate immunity",
 		image:
 			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 	},
@@ -48,6 +34,13 @@ const researchProjects = [
 
 export const Home: React.FC = () => {
 	const [showNav, setShowNav] = useState(false);
+	const [embedUrl, setEmbedUrl] = useState("");
+
+	useEffect(() => {
+		getMaps().then((res) => {
+			setEmbedUrl(res.embedUrl);
+		});
+	});
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -232,88 +225,112 @@ export const Home: React.FC = () => {
 			{/* SECTION 3 */}
 			<FadeInSection>
 				<Flex
-					direction="column"
+					direction={{ base: "column", lg: "row" }}
 					align="center"
 					justify="center"
-					minHeight="100vh"
+					minH="100vh"
+					gap={{ base: 10, lg: 16 }}
 					color="var(--text)"
 				>
-					<Text fontSize="4xl" fontWeight="bold">
-						Affiliations
-					</Text>
-					<Flex
-						direction="row"
-						align="center"
-						justify="center"
-						gap={[6, 8, 12]} // more spacing as logos get bigger
-						flexWrap="wrap"
-					>
-						{/* DLMP Logo */}
-						<Link href="https://dlmp.uw.edu/" target="_blank">
-							<Box
-								w={["200px", "280px", "360px"]} // mobile -> tablet -> desktop
-								h={["100px", "140px", "180px"]}
-								position="relative"
-							>
-								<img
-									src={dlmpLight}
-									className="logo light-logo"
-									style={{
-										width: "100%",
-										height: "100%",
-										objectFit: "contain",
-									}}
-								/>
-								<img
-									src={dlmpDark}
-									className="logo dark-logo"
-									style={{
-										width: "100%",
-										height: "100%",
-										objectFit: "contain",
-										position: "absolute",
-										top: 0,
-										left: 0,
-									}}
-								/>
-							</Box>
-						</Link>
+					{/* Affiliations */}
+					<Flex direction="column" align="center">
+						<Text fontSize="4xl" fontWeight="bold" mb={6}>
+							Affiliations
+						</Text>
 
-						{/* Microbiology Logo */}
-						<Link
-							href="https://microbiology.washington.edu/uw-microbiology-home"
-							target="_blank"
+						<Flex
+							direction="row"
+							align="center"
+							justify="center"
+							gap={[6, 8, 12]}
+							flexWrap="wrap"
 						>
-							<Box
-								w={["200px", "280px", "360px"]}
-								h={["100px", "140px", "180px"]}
-								position="relative"
-							>
-								<img
-									src={microLight}
-									className="logo light-logo"
-									style={{
-										width: "100%",
-										height: "100%",
-										objectFit: "contain",
-									}}
-								/>
-								<img
-									src={microDark}
-									className="logo dark-logo"
-									style={{
-										width: "100%",
-										height: "100%",
-										objectFit: "contain",
-										position: "absolute",
-										top: 0,
-										left: 0,
-									}}
-								/>
-							</Box>
-						</Link>
+							<Link href="https://dlmp.uw.edu/" target="_blank">
+								<Box
+									w={["200px", "280px", "360px"]}
+									h={["100px", "140px", "180px"]}
+									position="relative"
+								>
+									<img
+										src={dlmpLight}
+										className="logo light-logo"
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: "contain",
+										}}
+									/>
+									<img
+										src={dlmpDark}
+										className="logo dark-logo"
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: "contain",
+											position: "absolute",
+											inset: 0,
+										}}
+									/>
+								</Box>
+							</Link>
 
-						{/* Add more logos the same way */}
+							<Link
+								href="https://microbiology.washington.edu/uw-microbiology-home"
+								target="_blank"
+							>
+								<Box
+									w={["200px", "280px", "360px"]}
+									h={["100px", "140px", "180px"]}
+									position="relative"
+								>
+									<img
+										src={microLight}
+										className="logo light-logo"
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: "contain",
+										}}
+									/>
+									<img
+										src={microDark}
+										className="logo dark-logo"
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: "contain",
+											position: "absolute",
+											inset: 0,
+										}}
+									/>
+								</Box>
+							</Link>
+						</Flex>
+					</Flex>
+
+					{/* Divider */}
+					<Separator
+						orientation="vertical"
+						height="300px"
+						display={{ base: "none", lg: "block" }}
+					/>
+
+					{/* Find Us */}
+					<Flex direction="column" align="center">
+						<Text fontSize="4xl" fontWeight="bold" mb={6}>
+							Find us
+						</Text>
+
+						<Box width={{ base: "100%", md: "600px" }}>
+							<iframe
+								width="100%"
+								height="450"
+								loading="lazy"
+								allowFullScreen
+								referrerPolicy="no-referrer-when-downgrade"
+								src={embedUrl}
+							/>
+						</Box>
 					</Flex>
 				</Flex>
 			</FadeInSection>
