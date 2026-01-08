@@ -226,10 +226,10 @@ export const Home: React.FC = () => {
 			<FadeInSection>
 				<Flex
 					direction={{ base: "column", lg: "row" }}
-					align="center"
+					align={{ base: "center", lg: "flex-start" }}
 					justify="center"
-					minH="100vh"
 					gap={{ base: 10, lg: 16 }}
+					py={{ base: 20, lg: 32 }} // 👈 vertical breathing room
 					color="var(--text)"
 				>
 					{/* Affiliations */}
@@ -311,14 +311,19 @@ export const Home: React.FC = () => {
 					{/* Divider */}
 					<Separator
 						orientation="vertical"
-						height="300px"
 						display={{ base: "none", lg: "block" }}
+						alignSelf="stretch"
+						mx={5}
 					/>
 
 					{/* Find Us */}
-					<Flex direction="column" align="center">
+					<Flex direction="column" align="center" justify={"space-between"}>
 						<Text fontSize="4xl" fontWeight="bold" mb={6}>
 							Find us
+						</Text>
+						<Text textStyle="xl" mb={6}>
+							F753 Building, 750 Republican Street <br />
+							Seattle, WA 98102 <br />
 						</Text>
 
 						<Box width={{ base: "100%", md: "600px" }}>
