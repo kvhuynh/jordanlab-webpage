@@ -17,7 +17,7 @@ export const people: Record<
 			role: "Principal Investigator",
 			email: "txjordan@uw.edu",
 			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+				"./images/people/tristan/tristan-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],

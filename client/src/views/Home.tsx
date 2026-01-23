@@ -245,35 +245,6 @@ export const Home: React.FC = () => {
 							gap={[6, 8, 12]}
 							flexWrap="wrap"
 						>
-							<Link href="https://dlmp.uw.edu/" target="_blank">
-								<Box
-									w={["200px", "280px", "360px"]}
-									h={["100px", "140px", "180px"]}
-									position="relative"
-								>
-									<img
-										src={dlmpLight}
-										className="logo light-logo"
-										style={{
-											width: "100%",
-											height: "100%",
-											objectFit: "contain",
-										}}
-									/>
-									<img
-										src={dlmpDark}
-										className="logo dark-logo"
-										style={{
-											width: "100%",
-											height: "100%",
-											objectFit: "contain",
-											position: "absolute",
-											inset: 0,
-										}}
-									/>
-								</Box>
-							</Link>
-
 							<Link
 								href="https://microbiology.washington.edu/uw-microbiology-home"
 								target="_blank"
@@ -305,6 +276,35 @@ export const Home: React.FC = () => {
 									/>
 								</Box>
 							</Link>
+
+							<Link href="https://dlmp.uw.edu/" target="_blank">
+								<Box
+									w={["200px", "280px", "360px"]}
+									h={["100px", "140px", "180px"]}
+									position="relative"
+								>
+									<img
+										src={dlmpLight}
+										className="logo light-logo"
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: "contain",
+										}}
+									/>
+									<img
+										src={dlmpDark}
+										className="logo dark-logo"
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: "contain",
+											position: "absolute",
+											inset: 0,
+										}}
+									/>
+								</Box>
+							</Link>
 						</Flex>
 					</Flex>
 
@@ -319,10 +319,10 @@ export const Home: React.FC = () => {
 					{/* Find Us */}
 					<Flex direction="column" align="center" justify={"space-between"}>
 						<Text fontSize="4xl" fontWeight="bold" mb={6}>
-							Find us
+							Visit Us!
 						</Text>
 						<Text textStyle="xl" mb={6}>
-							F753 Building, 750 Republican Street <br />
+							F573 Building, 750 Republican Street <br />
 							Seattle, WA 98102 <br />
 						</Text>
 

@@ -120,41 +120,6 @@ export const Research: React.FC = () => {
 					</Flex>
 				</FadeInSection>
 			</Box>
-			{/* <Box position="relative" minHeight="100vh" overflow="hidden">
-				<FadeInSection>
-					<Flex
-						position="relative"
-						zIndex={1}
-						direction="column"
-						align="center"
-						justify="center"
-						minHeight="100vh"
-						color="var(--text)"
-					>
-						<Text textStyle="5xl" marginBottom={6}>
-							Our Goals
-						</Text>
-
-						<Text px={{ base: 4, md: 8 }} maxW="120ch" mx="auto">
-							<List.Root alignSelf="center">
-								<List.Item>
-									Deepen our understanding of how mammalian antiviral responses
-									are regulated
-								</List.Item>
-								<List.Item>
-									Expand our understanding of the evolutionary solutions to
-									viral infection
-								</List.Item>
-								<List.Item>
-									Identify and understand any evolutionary conservation between
-									viruses and hosts
-								</List.Item>
-							</List.Root>
-						</Text>
-					</Flex>
-				</FadeInSection>
-			</Box> */}
-
 			{sections.map((section, i) => (
 				<Box key={i} position="relative" minHeight="100vh" overflow="hidden">
 					<FadeInSection>

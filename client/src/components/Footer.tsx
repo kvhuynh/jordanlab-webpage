@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
 				<Text color="var(--text)" fontSize={"medium"} fontWeight={"bold"}>
 					University of Washington | School of Medicine — Department of
 					Microbiology | Department of Laboratory Medicine & Pathology <br />
-					© 2025 The Jordan Lab <br />
+					© 2026 The Jordan Lab <br />
 					powered by kevin huynh 😍
 				</Text>
 			</Flex>
