@@ -50,7 +50,7 @@ export const people: Record<
 			role: "2nd year graduate student",
 			email: "htoyoda@uw.edu",
 			image:
-				"./images/people/hunter/hunter-cropped-1x1.jpg",
+				"./images/people/hunter/hunter-swag-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
