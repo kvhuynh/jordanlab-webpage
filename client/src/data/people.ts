@@ -82,7 +82,7 @@ export const people: Record<
 			role: "Research Scientist",
 			email: "kvhuynh@uw.edu",
 			image:
-				"./images/people/avi/avi-cropped-1x1.jpg",
+				"./images/people/kevin/kevin.jpg",
 			description: "undisputed goat - Kevin was born and raised in Washington where he graduated from the University of Washington with a B.S in Molecular, Cellular, and Developmental Biology in 2021. ",
 			links: [{ label: "Publications", orcId: "0009-0000-6920-9935" }],
 		},
