@@ -83,7 +83,7 @@ export const people: Record<
 			email: "kvhuynh@uw.edu",
 			image:
 				"./images/people/kevin/kevin.jpeg",
-			description: "Kevin was born and raised in Washington and earned a B.S. in Molecular, Cellular, and Developmental Biology from the University of Washington in 2021. He conducted research in the Parrish Lab, studying the molecular mechanisms of neuropathic pain. His research interests expanded to include computational methods for biological discovery, and his current work focuses on identifying homologous proteins using structural and sequence-based homology approaches at scale. He also made this website 🤓.",
+			description: "Kevin was born and raised in Washington and earned a B.S. in Molecular, Cellular, and Developmental Biology from the University of Washington in 2021. He conducted research in the Parrish Lab, studying the molecular mechanisms of neuropathic pain. His research interests expanded to include computational methods for biological discovery, and his current work focuses on identifying antiviral homologous proteins/domains using structural and sequence-based homology approaches at scale. He also made this website 🤓.",
 			links: [{ label: "Publications", orcId: "0009-0000-6920-9935" }],
 		},
 	],
@@ -119,41 +119,6 @@ export const people: Record<
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
-		{
-			name: "Isabelle Ai",
-			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Publications", orcId: "#" }],
-		},
-		{
-			name: "Isabelle Ai",
-			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Publications", orcId: "#" }],
-		},
-		{
-			name: "Isabelle Ai",
-			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Publications", orcId: "#" }],
-		},
-		{
-			name: "Isabelle Ai",
-			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
-			links: [{ label: "Publications", orcId: "#" }],
-		},
+		
 	],
 };
