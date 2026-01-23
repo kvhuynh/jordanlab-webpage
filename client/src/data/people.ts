@@ -40,7 +40,7 @@ export const people: Record<
 			role: "2nd year graduate student",
 			email: "mfmm@uw.edu",
 			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+				"./images/people/maria/maria.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -50,7 +50,7 @@ export const people: Record<
 			role: "2nd year graduate student",
 			email: "htoyoda@uw.edu",
 			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+				"./images/people/hunter/hunter-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
