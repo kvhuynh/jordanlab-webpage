@@ -83,7 +83,7 @@ export const people: Record<
 			email: "kvhuynh@uw.edu",
 			image:
 				"./images/people/kevin/kevin.jpeg",
-			description: "undisputed goat - Kevin was born and raised in Washington where he graduated from the University of Washington with a B.S in Molecular, Cellular, and Developmental Biology in 2021. ",
+			description: "Kevin was born and raised in Washington and earned a B.S. in Molecular, Cellular, and Developmental Biology from the University of Washington in 2021. He conducted research in the Parrish Lab, studying the molecular mechanisms of neuropathic pain. His research interests expanded to include computational methods for biological discovery, and his current work focuses on identifying homologous proteins using structural and sequence-based homology approaches at scale. He also made this website 🤓.",
 			links: [{ label: "Publications", orcId: "0009-0000-6920-9935" }],
 		},
 	],
