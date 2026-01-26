@@ -105,17 +105,13 @@ export const Research: React.FC = () => {
 							Our Research
 						</Text>
 						<Text px={{ base: 4, md: 8 }} textStyle="xl" maxW="120ch" mx="auto">
-							We combine standard molecular biological techniques,
-							high-throughput screening, field sampling, Next-generation
-							sequencing (NGS), high-performance computing, and evolutionary
-							analysis by correlation and coevolution to address our research
-							interests. As the study of antiviral systems has important
-							translational applications, and the discovery of several major
-							antiviral systems has led to watersheds in either biotechnology or
-							medicine, we are also interested in pursuing the translatable
-							aspects of promising discoveries, although our major focus is on
-							the basic biology that underlies these processes. Our research
-							interest has been categorized into three domains:
+							Systems to detect and defend against viral invaders are critical
+							to an organism’s health and can provide power molecular tools for
+							biotechnology and medicine. Our goal is to understand how these
+							systems function across diverse eukaryotes. This basic knowledge
+							will inform the evolution of antiviral strategies across the
+							Eukarya and has the potential to provide the raw material for new
+							biotechnologies and medical interventions.
 						</Text>
 					</Flex>
 				</FadeInSection>

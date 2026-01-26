@@ -83,7 +83,7 @@ export const people: Record<
 			email: "kvhuynh@uw.edu",
 			image:
 				"./images/people/kevin/kevin.jpeg",
-			description: "Kevin was born and raised in Washington and earned a B.S. in Molecular, Cellular, and Developmental Biology from the University of Washington in 2021. He conducted research in the Parrish Lab, studying the molecular mechanisms of neuropathic pain. His research interests expanded to include computational methods for biological discovery, and his current work focuses on identifying antiviral homologous proteins/domains using structural and sequence-based homology approaches at scale. He also made this website 🤓.",
+			description: "Kevin was born and raised in Washington and earned a B.S. in Molecular, Cellular, and Developmental Biology from the University of Washington in 2021. He conducted research in the Parrish Lab, studying the molecular mechanisms of neuropathic pain. Since then, his research interests have expanded to include computational methods for biological discovery, and his current work in the lab focuses on identifying antiviral proteins in Eukarya using structural and sequence-based homology approaches at scale. He also made this website 🤓.",
 			links: [{ label: "Publications", orcId: "0009-0000-6920-9935" }],
 		},
 	],
