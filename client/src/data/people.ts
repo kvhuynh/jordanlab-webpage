@@ -30,7 +30,7 @@ export const people: Record<
 			email: "freyav@uw.edu",
 			image: "./images/people/freya/freya-cropped-1x1.jpg",
 			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+				"Freya grew up in Denver, Colorado and completed her Bachelor of Science in Microbiology at the University of Minnesota -- Twin Cities. Before college, she had no concept of biomedical research as a career and credit her time there and undergraduate research mentor, Dr. Tanya Freedman, for illuminating her path into research. She proceeded to spend two years at NIAID diving into virology techniques and adenovirus vectors as vaccine platforms before coming to the University of Washington as a Microbiology PhD student. She's super excited by molecular mechanisms of viral evasion and antiviral counter-defenses and what better way to immerse myself then studying both simultaneously in the novel virus-host pair of giant viruses and their amoeba hosts. In her free time, she loves to travel both locally and internationally, enjoy nature, craft, read, and admire any cat she encounters.",
 			links: [{ label: "Publications", orcId: "" }],
 		},
 		{
