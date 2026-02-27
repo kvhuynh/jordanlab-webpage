@@ -1,11 +1,4 @@
-import {
-	Box,
-	Flex,
-	Link,
-	Text,
-	Spinner,
-	Separator,
-} from "@chakra-ui/react";
+import { Box, Flex, Link, Text, Spinner, Separator } from "@chakra-ui/react";
 
 type Author = {
 	ORCID?: string;
@@ -56,7 +49,7 @@ export const Publications: React.FC = () => {
 
 			return acc;
 		},
-		{}
+		{},
 	);
 
 	if (loading) {
@@ -97,61 +90,69 @@ export const Publications: React.FC = () => {
 										</Text>
 
 										{/* Authors + link */}
-										{pub.authors && pub.authors.length > 0 && (
-											<Flex direction="column" align="flex-start" mb={1}>
-												{/* Authors */}
-												<Flex flexWrap="wrap" gap={1} mb={1}>
-													{(() => {
-														const authors = pub.authors;
-														const total = authors.length;
+										<Flex direction="column" align="flex-start" mb={1}>
+											{/* Authors */}
+											{/* Authors */}
+											{(() => {
+												const authors = Array.isArray(pub.authors)
+													? pub.authors
+													: [];
 
-														// If too many, show first N-1 and last author
-														const showExtra = total > AUTHOR_LIMIT;
-														const visibleAuthors = showExtra
-															? [
-																	...authors.slice(0, AUTHOR_LIMIT - 1),
-																	authors[total - 1],
-															  ]
-															: authors;
+												if (authors.length === 0) return null;
 
-														return visibleAuthors.map((author, i) => {
-															const given = author.given?.toLowerCase() ?? "";
-															const family = author.family?.toLowerCase() ?? "";
+												const total = authors.length;
+												const showExtra = total > AUTHOR_LIMIT;
+												const visibleAuthors = showExtra
+													? [
+															...authors.slice(0, AUTHOR_LIMIT - 1),
+															authors[total - 1],
+														]
+													: authors;
+
+												return (
+													<Flex flexWrap="wrap" gap={1} mb={1}>
+														{visibleAuthors.map((author, i) => {
+															const given = author?.given ?? "";
+															const family = author?.family ?? "";
 
 															const isPI =
-																family.includes("jordan") &&
-																given.startsWith("tristan");
+																family.toLowerCase().includes("jordan") &&
+																given.toLowerCase().startsWith("tristan");
 
 															const isLast = i === visibleAuthors.length - 1;
 
 															return (
 																<Text
-																	key={i}
+																	key={`${given}-${family}-${i}`}
 																	fontSize="sm"
 																	fontWeight={isPI ? "bold" : "normal"}
 																	textDecoration={isPI ? "underline" : "none"}
 																>
-																	{author.given} {author.family}
+																	{given} {family}
 																	{!isLast ? "," : ""}
 																</Text>
 															);
-														});
-													})()}
+														})}
 
-													{/* If skipped authors */}
-													{pub.authors.length > AUTHOR_LIMIT && (
-														<Text fontSize="sm">et al.</Text>
-													)}
-												</Flex>
+														{showExtra && <Text fontSize="sm">et al.</Text>}
+													</Flex>
+												);
+											})()}
 
-												{/* URL below authors */}
-												{pub.url && (
-													<Link href={pub.url} target="_blank" fontSize="sm">
-														{pub.url} <LuExternalLink />
-													</Link>
-												)}
-											</Flex>
-										)}
+											{/* URL renders independently */}
+											{pub.url && (
+												<Link
+													href={pub.url}
+													target="_blank"
+													fontSize="sm"
+													display="inline-flex"
+													alignItems="center"
+													gap={1}
+												>
+													{pub.url} <LuExternalLink />
+												</Link>
+											)}
+										</Flex>
 									</Box>
 								))}
 							</Box>

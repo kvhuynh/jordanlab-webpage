@@ -39,7 +39,7 @@ export const handler: Handler = async (event) => {
 
 const getAllPublications = async (orcidId: string): Promise<Publication[]> => {
     const URL = `https://pub.orcid.org/v3/${orcidId}/works`;
-
+    
     const res = await fetch(URL, {
         headers: { Accept: "application/json" },
     });
@@ -81,7 +81,8 @@ const getAllPublications = async (orcidId: string): Promise<Publication[]> => {
 
             const url =
                 work?.url?.value ?? doiEntry?.["external-id-url"]?.value ?? null;
-
+            // console.log(url);
+            
             publicationsMap.set(titleKey, {
                 title: titleRaw,
                 year,
