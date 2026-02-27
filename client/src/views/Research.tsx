@@ -1,20 +1,23 @@
 import {
 	Box,
 	Carousel,
+	Dialog,
 	Flex,
 	IconButton,
 	Image,
+	Portal,
 	Separator,
 	Text,
 } from "@chakra-ui/react";
 import { FadeInSection } from "../components/FadeInSection";
-import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
-import { useEffect } from "react";
+import { LuChevronLeft, LuChevronRight, LuX } from "react-icons/lu";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 // import amoebaVideo from "../assets/amoeba_timelapse.mp4";
 
 export const Research: React.FC = () => {
 	const { hash } = useLocation();
+	const [activeImage, setActiveImage] = useState<string | null>(null);
 
 	useEffect(() => {
 		if (hash) {
@@ -90,17 +93,6 @@ export const Research: React.FC = () => {
 						minHeight="75vh"
 						color="var(--text)"
 					>
-						{/* <Box maxW="800px" w="100%">
-							<Box
-								as="video"
-								src={amoebaVideo}
-								controls
-								autoPlay={false}
-								borderRadius="lg"
-								boxShadow="lg"
-								w="100%"
-							/>
-						</Box> */}
 						<Text textStyle="5xl" marginBottom={6}>
 							Our Research
 						</Text>
@@ -116,6 +108,7 @@ export const Research: React.FC = () => {
 					</Flex>
 				</FadeInSection>
 			</Box>
+
 			{sections.map((section, i) => (
 				<Box key={i} position="relative" minHeight="100vh" overflow="hidden">
 					<FadeInSection>
@@ -145,18 +138,18 @@ export const Research: React.FC = () => {
 												justify="center"
 												w="100%"
 											>
-												{/* Image */}
 												<Image
 													id={`section-${i}`}
 													src={section.image}
 													maxH="400px"
 													objectFit="contain"
+													cursor="pointer"
+													onClick={() => setActiveImage(section.image)}
 												/>
 
-												{/* Caption below image */}
 												{section.caption && (
 													<Text
-														mt={2} // spacing between image and caption
+														mt={2}
 														fontSize="sm"
 														color="var(--text)"
 														textAlign="center"
@@ -203,6 +196,58 @@ export const Research: React.FC = () => {
 					</FadeInSection>
 				</Box>
 			))}
+
+			{/* Overlay */}
+			<Dialog.Root
+				open={!!activeImage}
+				onOpenChange={(open) => {
+					if (!open) setActiveImage(null);
+				}}
+				size="full"
+			>
+				<Portal>
+					<Dialog.Positioner>
+						{/* Fullscreen wrapper */}
+						<Box
+							position="fixed"
+							inset={0}
+							bg="blackAlpha.800"
+							display="flex"
+							alignItems="center"
+							justifyContent="center"
+							onClick={() => setActiveImage(null)} // click outside closes
+							zIndex={9999}
+						>
+							{/* Inner Box stops propagation */}
+							<Box position="relative" onClick={(e) => e.stopPropagation()}>
+								{/* Close button */}
+								<IconButton
+									aria-label="Close"
+									size="sm"
+									variant="ghost"
+									color="white"
+									position="absolute"
+									top={2}
+									right={2}
+									zIndex={2}
+									onClick={() => setActiveImage(null)}
+								>
+									<LuX />
+								</IconButton>
+
+								{/* Image */}
+								<Image
+									src={activeImage ?? ""}
+									maxH="90vh"
+									maxW="90vw"
+									objectFit="contain"
+									borderRadius="lg"
+								/>
+							</Box>
+						</Box>
+					</Dialog.Positioner>
+				</Portal>
+			</Dialog.Root>
 		</Flex>
 	);
 };
