@@ -68,7 +68,7 @@ export const people: Record<
 			email: "bsenti@uw.edu",
 			image: "./images/people/bernie/bernie-cropped-1x1.jpg",
 			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+				"Bernie has called the pacific northwest their home since 2011 when their family moved here from Tucson, AZ. They attended Tacoma Community College in Tacoma, WA and earned their Associate of Science in 2021, then tranferred to the University of Washington where they earned their Bachelors of Science with Honors in Microbiology in 2024. It was during the fall of their junior year at the UW that they were introduced to and joined the lab of Dr. Tristan X. Jordan, and learned about the fascinating world of giant viruses that infect ameoba. Since then, Bernie has grown from an undergradute research assistant to full-time lab manager and research science technician. Over the years in the Jordan Lab, they have gained significant interest in virology and antiviral systems and is looking forward to furthering their knowledge as they mature as a scientist in the field. In the lab, Bernie can often be found bopping around binging podcasts as they work on experiments. When not at work, Bernie enjoys spending time with their friends and their partner, as well as drawing, reading, running, and cuddling their cat, Hex.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
