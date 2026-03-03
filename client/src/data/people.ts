@@ -16,7 +16,7 @@ export const people: Record<
 			name: "Tristan Jordan",
 			role: "Principal Investigator",
 			email: "txjordan@uw.edu",
-			image: "./images/people/tristan/tristan-cropped-1x1.jpg",
+			image: "./images/people/tristan/tristan-fresh-cropped-1x1.jpg",
 			description:
 				"I was born and raised in Virginia Beach, VA. Despite loving The South, warmth, and sunshine, my academic career has taken me north(west)ward where I have been excited to launch my lab at The University of Washington. I completed my bachelor’s degree at The College of Wooster in Wooster, Ohio with a double major in Biology and Classical Studies. Afterwards I joined a NIH Postbaccalaureate Research Education Program (PREP) at The University of Chicago in the lab of Dr. Glenn Randall. After completion of PREP, I continued in Dr. Randall’s lab for my PhD where I studied the signaling pathways that control lipid metabolism (specifically the autophagic degradation of lipid droplets) during dengue virus infection. From Chicago, I moved to New York where I joined the lab of Dr. Benjamin tenOever (first at the Icahn School of Medicine at Mount Sinai and then at NYU Grossman School of Medicine) as a postdoc. While I spent significant time working on SARS-CoV-2, it is in Dr. tenOever’s lab that I discovered my love of eukaryotic antiviral immunity - the evolution of diverse antiviral strategies, how viruses evade these, and the consequences of these antiviral strategies to the host. Since starting the lab in 2023, this has been our focus and I cannot be happier. While Seattle is certainly different from New York, Chicago, or the South, I’ve enjoyed the transition to the PNW and am constantly amazed at how gorgeous it is out here. When I am not science-ing, you can find me reading, playing video games, or enjoying the beautiful outdoors of the PNW.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -39,7 +39,7 @@ export const people: Record<
 			email: "mfmm@uw.edu",
 			image: "./images/people/maria/maria.jpg",
 			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+				"Maria is from the Bay Area in California. She received her B.S. in Microbiology from the University of California, San Diego. After graduating, she pursued her interest in neglected diseases at Mapp Biopharmaceutical, where she contributed to the development of antibody therapies targeting neglected diseases such as Ebola virus, Nipah virus, and botulism. Motivated to better understand host-pathogen interactions, she then joined Dr. Melanie Ott’s lab at the Gladstone Institutes, using human airway organoids to investigate immune responses to respiratory viruses, including SARS-CoV-2 and influenza. Maria joined the UW Pathobiology graduate program in 2024 and is co-mentored by Dr. Tristan Jordan and Dr. Ram Savan. Her projects focus on transcriptional regulation and the generation of self-PAMPS, as well as understanding how the post-translational modification prenylation can contribute to host restriction of viral replication. When she’s not in the lab, Maria enjoys spending time with her cats, reading, and enjoying the beautiful Washington outdoors.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
