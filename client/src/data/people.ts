@@ -88,7 +88,7 @@ export const people: Record<
 			email: "bduong03@uw.edu",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+				"Brandon grew up in Kansas City, Missouri where his passion for microbiological research and science drew him to the University of Washington for his undergraduate degree. Majoring in microbiology, Brandon is finishing his bachelor's of science Winter 2026. His journey into scientific research began in 2024 with his position as an undergraduate researcher with Dr. Joseph Mougous' laboratory in which aimed to elucidate mechanisms of interbacterial antagonism within the gut microbiome, specifically investigating mechanisms of intoxication within the Bacteroides genus via the utilization of type 6 secretion systems. Now in Dr. Tristan Jordan's lab, he explores mechanisms of antiviral defense and viral evasion within unicellular, amoeba host systems. He's excited to continue his education in graduate school with hopes of studying host-pathogen interactions, microbiome dynamics, and pathogen defense mechanisms. Outside of the lab, Brandon enjoys listening to music, crocheting, reading, and eating lots of food.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
