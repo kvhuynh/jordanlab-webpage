@@ -48,7 +48,7 @@ export const people: Record<
 			email: "htoyoda@uw.edu",
 			image: "./images/people/hunter/hunter-swag-cropped-1x1.jpg",
 			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+				"Hunter grew up in the Pacific Northwest in Kirkland, Washington. He received his B.S. in Biochemistry on the opposite coast at Suffolk University in Boston. At Suffolk, he had his first research experience working in Dr. Melanie Berkmen’s lab, studying protein–protein interactions within the conjugation machinery of Bacillus subtilis. After graduating, he joined Dr. Philip Kranzusch’s lab at the Dana-Farber Cancer Institute, where he used structural biology and biochemistry to study the molecular mechanisms of antiviral signaling pathways in humans and bacteria. Hunter joined UW’s Microbiology program in 2024, where his project now focuses on how giant viruses employ structural mimicry to antagonize the immune responses of amoeba. In his free time, Hunter enjoys exploring the outdoors, drinking cold brew, and rooting on his favorite Seattle sports teams.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 	],

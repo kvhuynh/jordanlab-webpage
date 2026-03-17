@@ -75,7 +75,7 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 									{p.description}
 								</Card.Description>
 							)}
-							{p.links && (
+							{/* {p.links && (
 								<Card.Footer justifyContent="flex-end" gap={4}>
 									{p.links.map((l, i) => (
 										<Link key={i} href={l.orcId}>
@@ -83,7 +83,7 @@ const Section: React.FC<{ title: string; members: Person[] }> = ({
 										</Link>
 									))}
 								</Card.Footer>
-							)}
+							)} */}
 						</Card.Body>
 					</Card.Root>
 				))}
