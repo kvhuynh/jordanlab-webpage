@@ -101,11 +101,138 @@ export const people: Record<
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
+		{
+			name: "Rachel Schneider",
+			role: "Undergraduate",
+			email: "res29@uw.edu",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
 	],
 	alumni: [
 		{
+			name: "Charlotte Nguyen",
+			role: "Undergraduate",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
 			name: "Isabelle Ai",
 			role: "Undergraduate",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Marty Kelty",
+			role: "Rotation Student",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Ryan Voves",
+			role: "Undergraduate",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Eva Alleman",
+			role: "Rotation Student",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Jules Milovich",
+			role: "Undergraduate",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Jacob Gravett",
+			role: "Undergraduate",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Christopher Dahl",
+			role: "Undergraduate",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Victoria How",
+			role: "Undergraduate",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Ben Kocsis",
+			role: "Rotation Student",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Zeidy Garcia",
+			role: "Rotation Student",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Eve Farrell",
+			role: "Lab Staff",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Amanda Antoch",
+			role: "Rotation Student",
+			image:
+				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Miles Colrey",
+			role: "Rotation Student",
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			description:

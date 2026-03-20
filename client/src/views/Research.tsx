@@ -41,7 +41,7 @@ export const Research: React.FC = () => {
 		types. We are also interested in understanding how distinct families of transcription factors
 		contribute to broad antiviral states that are independent of the interferons.`,
 			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+				"./images/figures/nudix_hydrolase_website.png",
 			caption:
 				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
@@ -56,7 +56,7 @@ export const Research: React.FC = () => {
 		in these eukaryotes. This suggests significant potential for brand new paradigms of viral detection
 		and defense.`,
 			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+				"./images/figures/bubbleplot_website.png",
 			caption:
 				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
