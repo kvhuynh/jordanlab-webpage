@@ -59,7 +59,7 @@ export const people: Record<
 			email: "ashukl3@uw.edu",
 			image: "./images/people/avi/avi-cropped-1x1.jpg",
 			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+				"",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
@@ -68,7 +68,7 @@ export const people: Record<
 			email: "bsenti@uw.edu",
 			image: "./images/people/bernie/bernie-cropped-1x1.jpg",
 			description:
-				"Bernie has called the pacific northwest their home since 2011 when their family moved here from Tucson, AZ. They attended Tacoma Community College in Tacoma, WA and earned their Associate of Science in 2021, then tranferred to the University of Washington where they earned their Bachelors of Science with Honors in Microbiology in 2024. It was during the fall of their junior year at the UW that they were introduced to and joined the lab of Dr. Tristan X. Jordan, and learned about the fascinating world of giant viruses that infect ameoba. Since then, Bernie has grown from an undergradute research assistant to full-time lab manager and research science technician. Over the years in the Jordan Lab, they have gained significant interest in virology and antiviral systems and is looking forward to furthering their knowledge as they mature as a scientist in the field. In the lab, Bernie can often be found bopping around binging podcasts as they work on experiments. When not at work, Bernie enjoys spending time with their friends and their partner, as well as drawing, reading, running, and cuddling their cat, Hex.",
+				"Avi is a native of India, belonging to the northern roots of the country. She began her academic career at Lucknow University, earning a bachelor’s degree from the Faculty of Science, before moving to Jiwaji University, Gwalior, to complete her Master’s degree in Biotechnology. During her internship at Defense Research and Development Establishment (DRDE), she was introduced to genetic modification of Vibrio cholerae by using the transposon Tn5. This experience sparked a passion for molecular biology that led her to pursue a PhD at the Indian Institute of Technology Bombay (IITB) in the Molecular Virology lab. Supported by the CSIR NET fellowship, she conducted research on genome evolution and its segregation using DNA packaging in Giant viruses. Following her Ph.D., Avi worked as a post-doctoral researcher at Laboratoire Information Génomique et Structurale (IGS) at Institut de Microbiologie de la Méditerranée, in Marseille, France, one of the pioneer labs in the field of Giant viruses. Here, she played a key role in the development and validation of a new standardized protocol for genetic manipulation of host and virus.She joined the Jordan Lab in 2025 as a Research Scientist at the University of Washington. Here, she focuses on identifying and characterizing antiviral systems in lower eukaryotes, specifically in Acanthamoeba. Drawing on a decade of experience in giant virus and amoeba research, her work centers on understanding host restriction factors against giant virus infection and the viral countermeasures which facilitate replication and propagation within diverse Acanthamoeba strains. \nOutside the lab, Avi loves to see new places and learn about different customs and traditions. She is also a passionate cook who loves exploring the world through its flavors, constantly experimenting with new dishes and techniques from across the globe.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
