@@ -52,7 +52,7 @@ export const Contact: React.FC = () => {
 							<Text textStyle="4xl" marginBottom={2}>
 								Available Positions
 							</Text>
-							<Text textStyle="xl">undergraDS pleASe</Text>
+							<Text textStyle="xl">Contact Tristan</Text>
 						</Box>
 
 						<Box>
