@@ -73,7 +73,7 @@ const ActiveMembers: React.FC<{ title: string; members: Person[] }> = ({
 							</Flex>
 							{p.description && (
 								<Card.Description color="var(--text)">
-									<Text textStyle={["lg", "md", "sm"]}>
+									<Text textStyle={["sm", "md", "lg"]}>
 
 									{p.description}
 									</Text>

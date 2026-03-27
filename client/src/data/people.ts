@@ -157,7 +157,7 @@ export const people: Record<
 		{
 			name: "Eva Alleman",
 			role: "Rotation Student",
-			currentRole: "Graduate student in the Malik Lab",
+			currentRole: "Graduate student in the Campbell Lab",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
