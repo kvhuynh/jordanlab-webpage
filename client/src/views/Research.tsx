@@ -33,41 +33,22 @@ export const Research: React.FC = () => {
 	const sections = [
 		{
 			token: "1",
-			title: "Transcriptional regulation of the antiviral state",
-			text: `Interferons and the genes they regulate constitute the major antiviral program in humans and other
-		vertebrates. Our lab focuses on the mechanism(s) by which transcription factors control the
-		interferon response – keeping the response off at baseline, modulating the magnitude of an
-		activated response, and cessation of the interferon response – and how this differs across tissue
-		types. We are also interested in understanding how distinct families of transcription factors
-		contribute to broad antiviral states that are independent of the interferons.`,
-			image:
-				"./images/figures/nudix_hydrolase_website.png",
+			title: "Regulation of the Antiviral State",
+			text: `Interferons control the major antiviral program in humans and other vertebrates. Our lab focuses on how the interferon response is regulated and how this differs across tissue types. We are also interested in understanding broad antiviral states that are interferon-independent.`,
+			image: "./images/figures/nudix_hydrolase_website1.png",
 			caption:
 				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
 		{
-			title: "Antiviral defense in microbial eukaryotes",
-			text: `Microbial eukaryotes are essential parts of the nutrient cycle in both marine and soil environments.
-		These eukaryotes are host to multiple clades of giant viruses (viruses whose genomes range from
-		~300kb to 2.5Mb) whose evolutionary origins remain a mystery. Despite the ecological
-		importance of these hosts and the prevalence of their viruses, little is known about how these hosts
-		defend themselves against viral pathogens. Homology analyses by our lab and others have been
-		unable to detect many modules of innate immunity conserved in prokaryotes and higher eukaryotes
-		in these eukaryotes. This suggests significant potential for brand new paradigms of viral detection
-		and defense.`,
-			image:
-				"./images/figures/bubbleplot_website.png",
+			title: "Antiviral Defenses in Microbial Eukaryotes",
+			text: `Despite having hundreds of known viruses, amoeba and other microbial eukaryotes lack essential nodes of antiviral defense present in prokaryotes and higher eukaryotes. Understanding how these organisms detect and survive viral infection promises fresh paradigms in antiviral defense.`,
+			image: "./images/figures/bubbleplot_website.png",
 			caption:
 				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
 		{
-			title: "Viral evasion of antiviral innate immunity",
-			text: `To successfully replicate their genomes and spread their progeny viruses must evade detection and
-		subvert the activation of host antiviral programs. Using both viruses of humans and microbial
-		eukaryotes, our lab focuses on the molecular strategies these viruses to undermine host immunity.
-		How these strategies have evolved across viral lineages, their functionality against diverse antiviral
-		systems, and their ability to reveal unknown mechanisms of host restriction are our major areas of
-		research.`,
+			title: "Viral Evasion of Antiviral Immunity",
+			text: `Using both viruses of humans and microbial eukaryotes, our lab focuses on the molecular strategies viruses use to undermine host immunity. Specifically, we are interest in how these strategies have evolved across viral lineages, their functionality against diverse antiviral systems, and their ability to reveal unknown mechanisms of host restriction.`,
 			image:
 				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
 			caption:
@@ -98,12 +79,10 @@ export const Research: React.FC = () => {
 						</Text>
 						<Text px={{ base: 4, md: 8 }} textStyle="xl" maxW="120ch" mx="auto">
 							Systems to detect and defend against viral invaders are critical
-							to an organism’s health and can provide power molecular tools for
-							biotechnology and medicine. Our goal is to understand how these
-							systems function across diverse eukaryotes. This basic knowledge
-							will inform the evolution of antiviral strategies across the
-							Eukarya and has the potential to provide the raw material for new
-							biotechnologies and medical interventions.
+							to an organism’s health and can provide powerful molecular tools
+							for biotechnology and medicine. Our goal is to understand how
+							these systems function across diverse eukaryotes and how they can
+							be exploited for human benefit.
 						</Text>
 					</Flex>
 				</FadeInSection>

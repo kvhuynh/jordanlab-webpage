@@ -1,6 +1,7 @@
 export type Person = {
 	name: string;
 	role: string;
+	currentRole?: string;
 	email?: string;
 	image?: string;
 	description?: string;
@@ -59,7 +60,7 @@ export const people: Record<
 			email: "ashukl3@uw.edu",
 			image: "./images/people/avi/avi-cropped-1x1.jpg",
 			description:
-								"Avi is a native of India, belonging to the northern roots of the country. She began her academic career at Lucknow University, earning a bachelor’s degree from the Faculty of Science, before moving to Jiwaji University, Gwalior, to complete her Master’s degree in Biotechnology. During her internship at Defense Research and Development Establishment (DRDE), she was introduced to genetic modification of Vibrio cholerae by using the transposon Tn5. This experience sparked a passion for molecular biology that led her to pursue a PhD at the Indian Institute of Technology Bombay (IITB) in the Molecular Virology lab. Supported by the CSIR NET fellowship, she conducted research on genome evolution and its segregation using DNA packaging in Giant viruses. Following her Ph.D., Avi worked as a post-doctoral researcher at Laboratoire Information Génomique et Structurale (IGS) at Institut de Microbiologie de la Méditerranée, in Marseille, France, one of the pioneer labs in the field of Giant viruses. Here, she played a key role in the development and validation of a new standardized protocol for genetic manipulation of host and virus.She joined the Jordan Lab in 2025 as a Research Scientist at the University of Washington. Here, she focuses on identifying and characterizing antiviral systems in lower eukaryotes, specifically in Acanthamoeba. Drawing on a decade of experience in giant virus and amoeba research, her work centers on understanding host restriction factors against giant virus infection and the viral countermeasures which facilitate replication and propagation within diverse Acanthamoeba strains. \nOutside the lab, Avi loves to see new places and learn about different customs and traditions. She is also a passionate cook who loves exploring the world through its flavors, constantly experimenting with new dishes and techniques from across the globe.",
+				"Avi is a native of India, belonging to the northern roots of the country. She began her academic career at Lucknow University, earning a bachelor’s degree from the Faculty of Science, before moving to Jiwaji University, Gwalior, to complete her Master’s degree in Biotechnology. During her internship at Defense Research and Development Establishment (DRDE), she was introduced to genetic modification of Vibrio cholerae by using the transposon Tn5. This experience sparked a passion for molecular biology that led her to pursue a PhD at the Indian Institute of Technology Bombay (IITB) in the Molecular Virology lab. Supported by the CSIR NET fellowship, she conducted research on genome evolution and its segregation using DNA packaging in Giant viruses. Following her Ph.D., Avi worked as a post-doctoral researcher at Laboratoire Information Génomique et Structurale (IGS) at Institut de Microbiologie de la Méditerranée, in Marseille, France, one of the pioneer labs in the field of Giant viruses. Here, she played a key role in the development and validation of a new standardized protocol for genetic manipulation of host and virus.She joined the Jordan Lab in 2025 as a Research Scientist at the University of Washington. Here, she focuses on identifying and characterizing antiviral systems in lower eukaryotes, specifically in Acanthamoeba. Drawing on a decade of experience in giant virus and amoeba research, her work centers on understanding host restriction factors against giant virus infection and the viral countermeasures which facilitate replication and propagation within diverse Acanthamoeba strains. \nOutside the lab, Avi loves to see new places and learn about different customs and traditions. She is also a passionate cook who loves exploring the world through its flavors, constantly experimenting with new dishes and techniques from across the globe.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
@@ -95,20 +96,24 @@ export const people: Record<
 			name: "Anna Valpiani",
 			role: "Undergraduate",
 			email: "annav10@uw.edu",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			image: "./images/people/virus.png",
+			description: "infinite staller",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
 			name: "Rachel Schneider",
 			role: "Undergraduate",
 			email: "res29@uw.edu",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
-			description:
-				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			description: "WELCOME!!!",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Edward Turner",
+			role: "Undergraduate",
+			email: "eji05@uw.edu",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			description: "",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 	],
@@ -116,8 +121,8 @@ export const people: Record<
 		{
 			name: "Charlotte Nguyen",
 			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -125,8 +130,8 @@ export const people: Record<
 		{
 			name: "Isabelle Ai",
 			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Undergraduate in some LLM lab my prodigy 🥹",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -134,8 +139,8 @@ export const people: Record<
 		{
 			name: "Marty Kelty",
 			role: "Rotation Student",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Graduate student in the Paredez Lab",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -143,8 +148,8 @@ export const people: Record<
 		{
 			name: "Ryan Voves",
 			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Sales Representative at GE HealthCare",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -152,8 +157,8 @@ export const people: Record<
 		{
 			name: "Eva Alleman",
 			role: "Rotation Student",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Graduate student in the Malik Lab",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -161,8 +166,7 @@ export const people: Record<
 		{
 			name: "Jules Milovich",
 			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -170,8 +174,8 @@ export const people: Record<
 		{
 			name: "Jacob Gravett",
 			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Completing medical school",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -179,8 +183,8 @@ export const people: Record<
 		{
 			name: "Christopher Dahl",
 			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Laboratory Scientist at Pfizer",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -188,17 +192,16 @@ export const people: Record<
 		{
 			name: "Victoria How",
 			role: "Undergraduate",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
-			name: "Ben Kocsis",
+			name: "Benjamin Kocsis",
 			role: "Rotation Student",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Graduate student in the Guo Lab",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -206,8 +209,8 @@ export const people: Record<
 		{
 			name: "Zeidy Garcia",
 			role: "Rotation Student",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Graduate student in the Lagunoff Lab",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -215,8 +218,8 @@ export const people: Record<
 		{
 			name: "Eve Farrell",
 			role: "Lab Staff",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Graduate student in the Taylor Lab HARVARD WOWW ",
+			image: "./images/people/alumni/eve/eve-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -224,8 +227,8 @@ export const people: Record<
 		{
 			name: "Amanda Antoch",
 			role: "Rotation Student",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Graduate student in the Meeske Lab",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -233,8 +236,8 @@ export const people: Record<
 		{
 			name: "Miles Colrey",
 			role: "Rotation Student",
-			image:
-				"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+			currentRole: "Graduate Student in the Mitchell Lab",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],

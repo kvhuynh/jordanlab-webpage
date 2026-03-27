@@ -145,14 +145,14 @@ export const Home: React.FC = () => {
 						The Host-Virus Arms Race
 					</Text>
 					<Text textStyle={["xl", "2xl"]} maxW="120ch" px={6}>
-						Viruses are known to parasitize all walks of life, exploiting the
-						host machinery for replication and propagation. While the host
-						evolves defense mechanisms to resist such infection, viruses
-						counter- evolve various strategies to negate the host’s defense
-						system. Such co-evolution leads to a perpetual host-virus arms race
-						where each organism must innovate constantly to stay alive. Our lab
-						focuses on the identification, regulation, evolution and antagonism
-						of the antiviral systems in diverse eukaryotes.
+						Viruses parasitize all walks of life, exploiting the host machinery
+						for replication and propagation. To survive, the host evolves
+						defense mechanisms to resist viral infection, which viruses
+						counterevolve to evade. This leads to a perpetual host-virus arms
+						race where each organism must constantly innovate to stay alive.
+						Research into how hosts defend and viruses evade has saved millions
+						of lives and unlocked transformative tools that have impacted every
+						sphere of biomedical science.
 					</Text>
 				</Flex>
 			</FadeInSection>
