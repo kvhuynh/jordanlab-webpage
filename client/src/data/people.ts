@@ -27,7 +27,7 @@ export const people: Record<
 	grad: [
 		{
 			name: "Freya van't veer",
-			role: "3rd year graduate student",
+			role: "Graduate Student - Joined 06/2024",
 			email: "freyav@uw.edu",
 			image: "./images/people/freya/freya-cropped-1x1.jpg",
 			description:
@@ -36,7 +36,7 @@ export const people: Record<
 		},
 		{
 			name: "Maria McCavitt-Malvido",
-			role: "2nd year graduate student",
+			role: "Graduate Student - Joined 06/2025",
 			email: "mfmm@uw.edu",
 			image: "./images/people/maria/maria.jpg",
 			description:
@@ -45,7 +45,7 @@ export const people: Record<
 		},
 		{
 			name: "Hunter Toyoda",
-			role: "2nd year graduate student",
+			role: "Graduate Student - Joined 06/2025",
 			email: "htoyoda@uw.edu",
 			image: "./images/people/hunter/hunter-swag-cropped-1x1.jpg",
 			description:
@@ -81,17 +81,18 @@ export const people: Record<
 				"Kevin was born and raised in Washington and earned a B.S. in Molecular, Cellular, and Developmental Biology from the University of Washington in 2021. He conducted research in the Parrish Lab, studying the molecular mechanisms of neuropathic pain. Since then, his research interests have expanded to include computational methods for biological discovery, and his current work in the lab focuses on identifying antiviral proteins in Eukarya using structural and sequence-based homology approaches at scale. He also made this website 🤓.",
 			links: [{ label: "Publications", orcId: "0009-0000-6920-9935" }],
 		},
-	],
-	undergrad: [
-		{
+				{
 			name: "Brandon Duong",
-			role: "Undergraduate",
+			role: "Postbaccalaureate Scholar",
 			email: "bduong03@uw.edu",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Brandon grew up in Kansas City, Missouri where his passion for microbiological research and science drew him to the University of Washington for his undergraduate degree. Majoring in microbiology, Brandon is finishing his bachelor's of science Winter 2026. His journey into scientific research began in 2024 with his position as an undergraduate researcher with Dr. Joseph Mougous' laboratory in which aimed to elucidate mechanisms of interbacterial antagonism within the gut microbiome, specifically investigating mechanisms of intoxication within the Bacteroides genus via the utilization of type 6 secretion systems. Now in Dr. Tristan Jordan's lab, he explores mechanisms of antiviral defense and viral evasion within unicellular, amoeba host systems. He's excited to continue his education in graduate school with hopes of studying host-pathogen interactions, microbiome dynamics, and pathogen defense mechanisms. Outside of the lab, Brandon enjoys listening to music, crocheting, reading, and eating lots of food.",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
+	],
+	undergrad: [
+
 		{
 			name: "Anna Valpiani",
 			role: "Undergraduate",
@@ -140,7 +141,7 @@ export const people: Record<
 			name: "Marty Kelty",
 			role: "Rotation Student",
 			currentRole: "Graduate student in the Paredez Lab",
-			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			// image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -158,7 +159,7 @@ export const people: Record<
 			name: "Eva Alleman",
 			role: "Rotation Student",
 			currentRole: "Graduate student in the Campbell Lab",
-			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			// image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -201,7 +202,7 @@ export const people: Record<
 			name: "Benjamin Kocsis",
 			role: "Rotation Student",
 			currentRole: "Graduate student in the Guo Lab",
-			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			// image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -210,7 +211,7 @@ export const people: Record<
 			name: "Zeidy Garcia",
 			role: "Rotation Student",
 			currentRole: "Graduate student in the Lagunoff Lab",
-			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			// image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -228,7 +229,7 @@ export const people: Record<
 			name: "Amanda Antoch",
 			role: "Rotation Student",
 			currentRole: "Graduate student in the Meeske Lab",
-			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			// image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -237,7 +238,7 @@ export const people: Record<
 			name: "Miles Colrey",
 			role: "Rotation Student",
 			currentRole: "Graduate Student in the Mitchell Lab",
-			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			// image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
