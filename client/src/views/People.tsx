@@ -91,7 +91,7 @@ const PastMembers: React.FC<{ title: string; members: Person[] }> = ({
 	if (members.length === 0) return null;
 
 	const grouped = {
-		"Lab Staff": members.filter((p) => p.role === "Lab Staff"),
+		"Lab Staff": members.filter((p) => p.role === "Lab Staff" || p.role.split(" ")[0] === "Research"),
 		"Rotation Students": members.filter((p) => p.role === "Rotation Student"),
 		"Undergraduates and Summer Students": members.filter(
 			(p) => p.role === "Undergraduate" || p.role === "Summer Student",

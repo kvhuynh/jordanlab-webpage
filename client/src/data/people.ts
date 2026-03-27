@@ -27,7 +27,7 @@ export const people: Record<
 	grad: [
 		{
 			name: "Freya van't veer",
-			role: "Graduate Student - Joined 06/2024",
+			role: "Graduate Student - Joined 2024",
 			email: "freyav@uw.edu",
 			image: "./images/people/freya/freya-cropped-1x1.jpg",
 			description:
@@ -36,7 +36,7 @@ export const people: Record<
 		},
 		{
 			name: "Maria McCavitt-Malvido",
-			role: "Graduate Student - Joined 06/2025",
+			role: "Graduate Student - Joined 2025",
 			email: "mfmm@uw.edu",
 			image: "./images/people/maria/maria.jpg",
 			description:
@@ -45,7 +45,7 @@ export const people: Record<
 		},
 		{
 			name: "Hunter Toyoda",
-			role: "Graduate Student - Joined 06/2025",
+			role: "Graduate Student - Joined 2025",
 			email: "htoyoda@uw.edu",
 			image: "./images/people/hunter/hunter-swag-cropped-1x1.jpg",
 			description:
@@ -81,7 +81,7 @@ export const people: Record<
 				"Kevin was born and raised in Washington and earned a B.S. in Molecular, Cellular, and Developmental Biology from the University of Washington in 2021. He conducted research in the Parrish Lab, studying the molecular mechanisms of neuropathic pain. Since then, his research interests have expanded to include computational methods for biological discovery, and his current work in the lab focuses on identifying antiviral proteins in Eukarya using structural and sequence-based homology approaches at scale. He also made this website 🤓.",
 			links: [{ label: "Publications", orcId: "0009-0000-6920-9935" }],
 		},
-				{
+		{
 			name: "Brandon Duong",
 			role: "Postbaccalaureate Scholar",
 			email: "bduong03@uw.edu",
@@ -92,7 +92,6 @@ export const people: Record<
 		},
 	],
 	undergrad: [
-
 		{
 			name: "Anna Valpiani",
 			role: "Undergraduate",
@@ -150,6 +149,15 @@ export const people: Record<
 			name: "Ryan Voves",
 			role: "Undergraduate",
 			currentRole: "Sales Representative at GE HealthCare",
+			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			description:
+				"Research focus description goes here. Could be 2–3 sentences about PI.",
+			links: [{ label: "Publications", orcId: "#" }],
+		},
+		{
+			name: "Virginia Lantinga ",
+			role: "Undergraduate",
+			currentRole: "",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
@@ -218,7 +226,7 @@ export const people: Record<
 		},
 		{
 			name: "Eve Farrell",
-			role: "Lab Staff",
+			role: "Research Scientist",
 			currentRole: "Graduate student in the Taylor Lab HARVARD WOWW ",
 			image: "./images/people/alumni/eve/eve-cropped-1x1.jpg",
 			description:
