@@ -73,10 +73,7 @@ const ActiveMembers: React.FC<{ title: string; members: Person[] }> = ({
 							</Flex>
 							{p.description && (
 								<Card.Description color="var(--text)">
-									<Text textStyle={["sm", "md", "lg"]}>
-
-									{p.description}
-									</Text>
+									<Text textStyle={["sm", "md", "lg"]}>{p.description}</Text>
 								</Card.Description>
 							)}
 						</Card.Body>
@@ -96,7 +93,9 @@ const PastMembers: React.FC<{ title: string; members: Person[] }> = ({
 	const grouped = {
 		"Lab Staff": members.filter((p) => p.role === "Lab Staff"),
 		"Rotation Students": members.filter((p) => p.role === "Rotation Student"),
-		Undergraduates: members.filter((p) => p.role === "Undergraduate"),
+		"Undergraduates and Summer Students": members.filter(
+			(p) => p.role === "Undergraduate" || p.role === "Summer Student",
+		),
 	};
 
 	return (
@@ -116,9 +115,7 @@ const PastMembers: React.FC<{ title: string; members: Person[] }> = ({
 							<Text fontSize="2xl" mb={2}>
 								{groupTitle}
 							</Text>
-							<Box>
-								
-							</Box>
+							<Box></Box>
 							<SimpleGrid
 								columns={{ base: 1, sm: 2, md: 2 }}
 								gap={4}
@@ -137,6 +134,7 @@ const PastMembers: React.FC<{ title: string; members: Person[] }> = ({
 													<Text fontSize="xl" fontWeight="bold">
 														{p.name}
 													</Text>
+													<Text> {p.role}</Text>
 													<Text textStyle="md" fontWeight="light">
 														{p.currentRole}
 													</Text>

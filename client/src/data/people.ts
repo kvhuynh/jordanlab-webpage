@@ -121,7 +121,7 @@ export const people: Record<
 	alumni: [
 		{
 			name: "Charlotte Nguyen",
-			role: "Undergraduate",
+			role: "Summer Student",
 			currentRole: "",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
@@ -131,7 +131,7 @@ export const people: Record<
 		{
 			name: "Isabelle Ai",
 			role: "Undergraduate",
-			currentRole: "Undergraduate in some LLM lab my prodigy 🥹",
+			currentRole: "Trainee in some LLM lab 🥹 my prodigy",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
@@ -166,7 +166,7 @@ export const people: Record<
 		},
 		{
 			name: "Jules Milovich",
-			role: "Undergraduate",
+			role: "Summer Student",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
@@ -174,7 +174,7 @@ export const people: Record<
 		},
 		{
 			name: "Jacob Gravett",
-			role: "Undergraduate",
+			role: "Summer Student",
 			currentRole: "Completing medical school",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
@@ -183,7 +183,7 @@ export const people: Record<
 		},
 		{
 			name: "Christopher Dahl",
-			role: "Undergraduate",
+			role: "Summer Student",
 			currentRole: "Laboratory Scientist at Pfizer",
 			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
 			description:
@@ -235,7 +235,7 @@ export const people: Record<
 			links: [{ label: "Publications", orcId: "#" }],
 		},
 		{
-			name: "Miles Colrey",
+			name: "Miles Corley",
 			role: "Rotation Student",
 			currentRole: "Graduate Student in the Mitchell Lab",
 			// image: "./images/people/brandon/brandon-cropped-1x1.jpg",
