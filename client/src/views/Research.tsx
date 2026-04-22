@@ -42,7 +42,7 @@ export const Research: React.FC = () => {
 		{
 			title: "Antiviral Defenses in Microbial Eukaryotes",
 			text: `Despite having hundreds of known viruses, amoeba and other microbial eukaryotes lack essential nodes of antiviral defense present in prokaryotes and higher eukaryotes. Understanding how these organisms detect and survive viral infection promises fresh paradigms in antiviral defense.`,
-			image: "./images/figures/bubbleplot_website.png",
+			image: "./images/figures/av_def.svg",
 			caption:
 				"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iste ad unde nobis quia ab, repellendus porro ipsa. Hic, alias fugiat beatae corporis eaque qui consequuntur tempora assumenda nemo dignissimos?",
 		},
@@ -74,6 +74,20 @@ export const Research: React.FC = () => {
 						minHeight="75vh"
 						color="var(--text)"
 					>
+						<Flex gap={6} mb={6}>
+							<video style={{ width: "45%" }} controls muted autoPlay loop playsInline>
+								<source
+									src="./images/figures/amoeba_timelapse.mp4"
+									type="video/mp4"
+								/>
+							</video>
+							<video style={{ width: "45%" }} controls muted autoPlay loop playsInline>
+								<source
+									src="./images/figures/amoeba_timelapse.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</Flex>
 						<Text textStyle="5xl" marginBottom={6}>
 							Our Research
 						</Text>
