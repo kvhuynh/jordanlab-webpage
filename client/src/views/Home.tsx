@@ -13,22 +13,21 @@ import logo from "../assets/logo3x.png";
 import { FadeInSection } from "../components/FadeInSection";
 import HeaderCloud from "../components/HeaderCloud";
 
+
+
 const researchProjects = [
 	{
 		token: "1",
 		title: "Transcriptional regulation of the antiviral state",
-		image:
-			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+		image: "./images/figures/nudix_hydrolases.png",
 	},
 	{
 		title: "Antiviral defense in microbial eukaryotes",
-		image:
-			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+		image: "./images/figures/TCS_heatmap_website_white_bg.png",
 	},
 	{
 		title: "Viral evasion of antiviral innate immunity",
-		image:
-			"https://microbiology.washington.edu/sites/default/files/styles/profile_detail_page/public/pictures/2023-01/Jordan_Tristan_pic.jpeg?itok=C6tho98B",
+		image: "./images/figures/av_def.png",
 	},
 ];
 

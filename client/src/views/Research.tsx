@@ -330,10 +330,10 @@ export const Research: React.FC = () => {
 			title: "Regulation of the Antiviral State",
 			text: "Interferons control the major antiviral program in humans and other vertebrates. Our lab focuses on how the interferon response is regulated and how this differs across tissue types. We are also interested in understanding broad antiviral states that are interferon-independent.",
 			slides: [
-				{
-					image: "./images/figures/nudix_hydrolases.png",
-					caption: "Representative domain architecture analysis.",
-				},
+				// {
+				// 	image: "./images/figures/nudix_hydrolases.png",
+				// 	caption: "Representative domain architecture analysis.",
+				// },
 			],
 		},
 		{
@@ -358,10 +358,10 @@ export const Research: React.FC = () => {
 			title: "Viral Evasion of Antiviral Immunity",
 			text: "Using both viruses of humans and microbial eukaryotes, our lab focuses on the molecular strategies viruses use to undermine host immunity. We study how these strategies evolved across viral lineages and how they reveal unknown mechanisms of host restriction.",
 			slides: [
-				{
-					image: "./images/figures/bubble_chart.png",
-					caption: "Cross-species evolutionary signatures.",
-				},
+				// {
+				// 	image: "./images/figures/bubble_chart.png",
+				// 	caption: "Cross-species evolutionary signatures.",
+				// },
 			],
 		},
 	];

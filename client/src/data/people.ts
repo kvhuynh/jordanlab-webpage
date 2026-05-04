@@ -96,7 +96,7 @@ export const people: Record<
 			name: "Rachel Schneider",
 			role: "Undergraduate",
 			email: "res29@uw.edu",
-			image: "./images/people/brandon/brandon-cropped-1x1.jpg",
+			image: "./images/people/rachel/rachel-cropped-1x1.jpg",
 			description: "",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
