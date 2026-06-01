@@ -12,6 +12,8 @@ import { SimpleGrid } from "@chakra-ui/react";
 
 import { Person, people } from "../data/people";
 
+import ApexChart from "../components/ApexChart"
+
 const ActiveMembers: React.FC<{ title: string; members: Person[] }> = ({
 	title,
 	members,
@@ -184,8 +186,13 @@ export const People: React.FC = () => {
 			<ActiveMembers title="Research Staff" members={people.staff} />
 			<ActiveMembers title="Undergraduates" members={people.undergrad} />
 			<PastMembers title="Alumni" members={people.alumni} />
+	<ApexChart></ApexChart>
+
 		</Flex>
+		
 	);
+
+
 };
 
 export default People;
