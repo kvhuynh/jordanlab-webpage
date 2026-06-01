@@ -8,7 +8,7 @@ export const ApexChart = () => {
 
 	// 1. Restructured series: Each role acts as a distinct layer.
 	// Matching 'x' names across layers automatically merges them onto a single row.
-	const [series] = useState<ApexAxisChartSeries>([
+	const [series] = useState([
 		{
 			name: "PI",
 			data: [
