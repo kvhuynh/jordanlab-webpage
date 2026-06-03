@@ -34,7 +34,7 @@ export const FadeInSection: React.FC<{ children: React.ReactNode }> = ({
 	const inView = useInView(ref, {
 		amount: 0,
 		once: false,
-		rootMargin: "0px 0px 300px 0px",
+		// rootMargin: "0px 0px 300px 0px",
 	});
 
 	return (
