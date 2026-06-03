@@ -114,7 +114,7 @@ export const people: Record<
 			name: "Anna Valpiani",
 			role: "Undergraduate",
 			email: "annav10@uw.edu",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description: "infinite staller",
 			links: [{ label: "Publications", orcId: "#" }],
 		},
@@ -122,7 +122,7 @@ export const people: Record<
 			name: "Charlotte Nguyen",
 			role: "Summer Student",
 			currentRole: "",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -132,7 +132,7 @@ export const people: Record<
 			role: "Undergraduate",
 			currentRole:
 				"Trainee in the Laboratory of Photonic Systems, under UW Physics and UW Electrical and Computer Engineering",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -150,7 +150,7 @@ export const people: Record<
 			name: "Ryan Voves",
 			role: "Undergraduate",
 			currentRole: "Sales Representative at GE HealthCare",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -159,7 +159,7 @@ export const people: Record<
 			name: "Virginia Lantinga ",
 			role: "Undergraduate",
 			currentRole: "",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -176,7 +176,7 @@ export const people: Record<
 		{
 			name: "Jules Milovich",
 			role: "Summer Student",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -185,7 +185,7 @@ export const people: Record<
 			name: "Jacob Gravett",
 			role: "Summer Student",
 			currentRole: "Completing medical school",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -194,7 +194,7 @@ export const people: Record<
 			name: "Christopher Dahl",
 			role: "Summer Student",
 			currentRole: "Laboratory Scientist at Pfizer",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -202,7 +202,7 @@ export const people: Record<
 		{
 			name: "Victoria How",
 			role: "Undergraduate",
-			image: "./images/people/virus.png",
+			// image: "./images/people/virus.png",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],
@@ -229,7 +229,7 @@ export const people: Record<
 			name: "Eve Farrell",
 			role: "Research Scientist",
 			currentRole: "Graduate student in the Taylor Lab at Harvard University",
-			image: "./images/people/alumni/eve/eve-cropped-1x1.jpg",
+			// image: "./images/people/alumni/eve/eve-cropped-1x1.jpg",
 			description:
 				"Research focus description goes here. Could be 2–3 sentences about PI.",
 			links: [{ label: "Publications", orcId: "#" }],

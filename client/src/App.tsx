@@ -9,6 +9,7 @@ import Nav from "./components/Nav";
 import "./App.css";
 import "./index.css";
 import Research from "./views/Research";
+import JoinUs from "./views/JoinUs";
 import { Box } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import CloudedSection from "./components/CloudedSection";
@@ -45,6 +46,8 @@ function App() {
 						<Route path="/publications" element={<Publications />}></Route>
 						<Route path="/contact" element={<Contact />}></Route>
 						<Route path="/news" element={<News />}></Route>
+						<Route path="/join-us" element={<JoinUs />}></Route>
+
 					</Routes>
 				</Box>
 			</CloudedSection>
