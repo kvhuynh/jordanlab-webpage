@@ -37,7 +37,7 @@ export const Research: React.FC = () => {
 			slides: [
 				{
 					image: "./images/figures/IFN_figure_website.png",
-					caption: "Representative domain architecture analysis.",
+					// caption: "Representative domain architecture analysis.",
 				},
 			],
 		},
@@ -47,15 +47,15 @@ export const Research: React.FC = () => {
 			slides: [
 				{
 					image: "./images/figures/TCS_heatmap_website_white_bg.png",
-					caption: "Phylogenetic distribution heatmap.",
+					// caption: "Phylogenetic distribution heatmap.",
 				},
 				{
 					image: "./images/figures/av_def.png",
-					caption: "Comparative antiviral defense pathways.",
+					// caption: "Comparative antiviral defense pathways.",
 				},
 				{
 					image: "./images/figures/bubble_chart.png",
-					caption: "Enrichment analysis across taxa.",
+					// caption: "Enrichment analysis across taxa.",
 				},
 			],
 		},
