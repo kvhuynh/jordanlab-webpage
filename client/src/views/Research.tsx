@@ -158,7 +158,7 @@ export const Research: React.FC = () => {
 			</Box>
 
 			{researchSections.map((section, i) => (
-				<Box key={i} position="relative" minHeight="100vh" overflow="hidden">
+				<Box key={i} id={`section-${i}`} position="relative" minHeight="100vh" overflow="hidden">
 					{/* Keep the layout containers static and un-animated */}
 					<Flex
 						position="relative"
@@ -305,3 +305,5 @@ export const Research: React.FC = () => {
 };
 
 export default Research;
+
+

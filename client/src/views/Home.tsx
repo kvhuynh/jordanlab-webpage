@@ -1,4 +1,12 @@
-import { Box, Flex, Text, Link, Image, Separator } from "@chakra-ui/react";
+import {
+	Box,
+	Flex,
+	Text,
+	Link,
+	Image,
+	Separator,
+	SimpleGrid,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -13,13 +21,10 @@ import logo from "../assets/logo3x.png";
 import { FadeInSection } from "../components/FadeInSection";
 import HeaderCloud from "../components/HeaderCloud";
 
-
-
 const researchProjects = [
 	{
-		token: "1",
 		title: "Transcriptional regulation of the antiviral state",
-		image: "./images/figures/nudix_hydrolases.png",
+		image: "./images/figures/IFN_figure_website.png",
 	},
 	{
 		title: "Antiviral defense in microbial eukaryotes",
@@ -27,7 +32,11 @@ const researchProjects = [
 	},
 	{
 		title: "Viral evasion of antiviral innate immunity",
-		image: "./images/figures/av_def.png",
+		image: "./images/figures/nudix_hydrolases.png",
+	},
+	{
+		title: "Environmental Isolation of Acanthamoeba and their Giant Viruses",
+		image: "./images/figures/MsV_EM.png",
 	},
 ];
 
@@ -176,47 +185,49 @@ export const Home: React.FC = () => {
 						maxW="1200px"
 						px={4}
 					>
-						{researchProjects.map((project, i) => (
-							<motion.div
-								key={project.title}
-								whileHover={{ scale: 1.05 }}
-								transition={{ type: "spring", stiffness: 200, damping: 15 }}
-							>
-								<Link href={`/research#section-${i}`}>
-									<Box
-										w={["140px", "180px", "220px"]}
-										h={["140px", "180px", "220px"]}
-										borderRadius="lg"
-										overflow="hidden"
-										boxShadow="md"
-										bg="var(--card-bg)"
-										position="relative"
-										cursor="pointer"
-									>
-										<Image
-											src={project.image}
-											alt={project.title}
-											w="100%"
-											h="100%"
-											objectFit="cover"
-										/>
+						<SimpleGrid columns={{ base: 1, md: 2 }} gap={8} w="100%">
+							{researchProjects.map((project, i) => (
+								<motion.div
+									key={project.title}
+									whileHover={{ scale: 1.05 }}
+									transition={{ type: "spring", stiffness: 200, damping: 15 }}
+								>
+									<Link href={`/research#section-${i}`}>
 										<Box
-											position="absolute"
-											bottom={0}
-											w="100%"
-											bg="rgba(0,0,0,0.55)"
-											color="white"
-											p={2}
-											fontWeight="semibold"
-											fontSize="sm"
-											textAlign="center"
+											w={["200px", "240px", "280px"]}
+											h={["200px", "240px", "280px"]}
+											borderRadius="lg"
+											overflow="hidden"
+											boxShadow="md"
+											bg="var(--card-bg)"
+											position="relative"
+											cursor="pointer"
 										>
-											{project.title}
+											<Image
+												src={project.image}
+												alt={project.title}
+												w="100%"
+												h="100%"
+												objectFit="cover"
+											/>
+											<Box
+												position="absolute"
+												bottom={0}
+												w="100%"
+												bg="rgba(0,0,0,0.55)"
+												color="white"
+												p={2}
+												fontWeight="semibold"
+												fontSize="sm"
+												textAlign="center"
+											>
+												{project.title}
+											</Box>
 										</Box>
-									</Box>
-								</Link>
-							</motion.div>
-						))}
+									</Link>
+								</motion.div>
+							))}
+						</SimpleGrid>
 					</Flex>
 				</Flex>
 			</FadeInSection>
