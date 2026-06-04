@@ -60,9 +60,9 @@ export const Nav: React.FC<{ show: boolean }> = ({ show }) => {
 						<Link href="/news" fontSize="lg" color="var(--text)">
 							News
 						</Link>
-						<Link href="/contact" fontSize="lg" color="var(--text)">
+						{/* <Link href="/contact" fontSize="lg" color="var(--text)">
 							Contact
-						</Link>
+						</Link> */}
 						<Link href="/join-us" fontSize="lg" color="var(--text)">
 							Join Us
 						</Link>
