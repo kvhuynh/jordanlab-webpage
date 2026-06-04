@@ -351,7 +351,7 @@ export const JoinUs: React.FC = () => {
                             // FIXED: Removed mx="auto" to align text strictly to the left edge
                         >
                             Enthusiastic undergraduates in their freshman through junior years
-                            interested in the lab's research are encouraged to reach out to
+                            interested in the lab's research are encouraged to reach out
                             directly.
                         </Text>
                     </Box>
