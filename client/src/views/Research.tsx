@@ -53,10 +53,10 @@ export const Research: React.FC = () => {
 					image: "./images/figures/av_def.png",
 					// caption: "Comparative antiviral defense pathways.",
 				},
-				{
-					image: "./images/figures/bubble_chart.png",
-					// caption: "Enrichment analysis across taxa.",
-				},
+				// {
+				// 	// image: "./images/figures/bubble_chart.png",
+				// 	// caption: "Enrichment analysis across taxa.",
+				// },
 			],
 		},
 		{
