@@ -26,7 +26,7 @@ export const people: Record<
 	postdocs: [],
 	grad: [
 		{
-			name: "Freya van't veer",
+			name: "Freya van't Veer",
 			role: "Graduate Student - Joined 2024",
 			email: "freyav@uw.edu",
 			image: "./images/people/freya/freya-cropped-1x1.jpg",
