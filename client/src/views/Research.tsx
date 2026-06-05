@@ -68,7 +68,7 @@ export const Research: React.FC = () => {
 					// caption: "Cross-species evolutionary signatures.",
 				},
 				{
-					image: "./images/figures/structural_homologs.png"
+					image: "./images/figures/structural_homologs_no_names.png"
 				}
 			],
 		},
