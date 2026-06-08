@@ -105,7 +105,7 @@ export const Nav: React.FC<{ show: boolean }> = ({ show }) => {
 							News
 						</Link>
 						<Link href="/join-us" onClick={onToggle} color="var(--text)">
-							Join us
+							Join Us
 						</Link>
 					</VStack>
 				)}
