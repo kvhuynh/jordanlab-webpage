@@ -67,8 +67,6 @@ export const Nav: React.FC<{ show: boolean }> = ({ show }) => {
 							Join Us
 						</Link>
 						<DarkModeSwitch />
-						
-						 
 					</Flex>
 
 					{/* Mobile menu */}
@@ -103,8 +101,11 @@ export const Nav: React.FC<{ show: boolean }> = ({ show }) => {
 						<Link href="/people" onClick={onToggle} color="var(--text)">
 							People
 						</Link>
-						<Link href="/contact" onClick={onToggle} color="var(--text)">
-							Contact
+						<Link href="/news" onClick={onToggle} color="var(--text)">
+							News
+						</Link>
+						<Link href="/join-us" onClick={onToggle} color="var(--text)">
+							Join us
 						</Link>
 					</VStack>
 				)}
@@ -141,20 +142,20 @@ export default memo(Nav);
 //             animate={{ opacity: show ? 1 : 0, y: show ? 0 : -20 }}
 //             transition={{ duration: 0.6, ease: "easeOut" }}
 //             // FIXED: Using inset completely bypasses the scrollbar width calculation bug
-//             style={{ 
-//                 position: "fixed", 
+//             style={{
+//                 position: "fixed",
 //                 top: 0,
 //                 left: 0,
 //                 right: 0,
-//                 zIndex: 1000 
+//                 zIndex: 1000
 //             }}
 //         >
 //             {/* The background stays 100% wide */}
 //             <Box w="100%" bg="var(--bg-nav)" p={4}>
 //                 {/* FIXED: This Flex container will now perfectly clamp to the true viewport bounds */}
-//                 <Flex 
-//                     justify="space-between" 
-//                     align="center" 
+//                 <Flex
+//                     justify="space-between"
+//                     align="center"
 //                     maxW="1400px" // Optional: keeps your lab nav from getting absurdly wide on huge monitors
 //                     mx="auto" // Centers the content perfectly if it hits the max width
 //                     px={{ base: 2, md: 4 }} // Small safety padding inside the screen edges
