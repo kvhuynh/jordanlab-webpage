@@ -20,7 +20,7 @@ function App() {
 	const location = useLocation();
 	const [showNav, setShowNav] = useState(location.pathname !== "/");
 
-	const MEASUREMENT_ID = "G-TRACKINGID";
+	const MEASUREMENT_ID = "G-7EZM19JZRG";
 	ReactGA.initialize(MEASUREMENT_ID);
 
 	useEffect(() => {
