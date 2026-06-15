@@ -14,11 +14,14 @@ import { Box } from "@chakra-ui/react";
 import Footer from "./components/Footer";
 import CloudedSection from "./components/CloudedSection";
 import { useEffect, useState } from "react";
+import ReactGA from "react-ga4";
 
 function App() {
 	const location = useLocation();
-	// const [showNav, setShowNav] = useState(true);
 	const [showNav, setShowNav] = useState(location.pathname !== "/");
+
+	const MEASUREMENT_ID = "G-TRACKINGID";
+	ReactGA.initialize(MEASUREMENT_ID);
 
 	useEffect(() => {
 		if (location.pathname === "/") {
@@ -34,6 +37,10 @@ function App() {
 	useEffect(() => {
 		window.history.scrollRestoration = "manual";
 	}, []);
+
+	useEffect(() => {
+		ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+	}, []);
 	return (
 		<>
 			<Nav show={showNav}></Nav>
@@ -47,7 +54,6 @@ function App() {
 						<Route path="/contact" element={<Contact />}></Route>
 						<Route path="/news" element={<News />}></Route>
 						<Route path="/join-us" element={<JoinUs />}></Route>
-
 					</Routes>
 				</Box>
 			</CloudedSection>
