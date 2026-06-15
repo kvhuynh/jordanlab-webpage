@@ -314,7 +314,7 @@ export const JoinUs: React.FC = () => {
                     <Box>
                         <Text textStyle={["4xl", "5xl"]} fontWeight="bold">
                             We are currently accepting students from Microbiology,
-                            Pathobiology, MCB, M3D, and MSTP
+                            Pathobiology, MCB, M3D, and MSTP programs
                         </Text>
                     </Box>
 
